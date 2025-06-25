@@ -13,6 +13,8 @@ namespace Mess_Management_System
 {
     public partial class LogInForm : Form
     {
+
+        SqlConnection conn;
         public LogInForm()
         {
             InitializeComponent();
