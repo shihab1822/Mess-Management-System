@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Mess_Management_System
 {
-    public partial class Form1: Form
+    public partial class ChiefDashboard : Form
     {
-        public Form1()
+        public ChiefDashboard()
         {
             InitializeComponent();
         }
