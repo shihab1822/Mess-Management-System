@@ -65,5 +65,12 @@ namespace Mess_Management_System
                 MessageBox.Show("Invalid username or password.");
             }
         }
+
+        private void lblSignUp_Click(object sender, EventArgs e)
+        {
+            SignUp sp = new SignUp();
+            sp.Show(this);
+            
+        }
     }
 }

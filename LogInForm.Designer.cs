@@ -49,6 +49,7 @@
             this.lblSignUp.Size = new System.Drawing.Size(75, 20);
             this.lblSignUp.TabIndex = 15;
             this.lblSignUp.Text = "Sign Up";
+            this.lblSignUp.Click += new System.EventHandler(this.lblSignUp_Click);
             // 
             // label2
             // 
