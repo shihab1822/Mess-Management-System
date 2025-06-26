@@ -32,5 +32,10 @@ namespace Mess_Management_System
             }
 
         }
+
+        private void btnSignUp_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

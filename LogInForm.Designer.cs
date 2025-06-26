@@ -127,7 +127,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
+            this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1382, 753);
             this.Controls.Add(this.lblSignUp);
             this.Controls.Add(this.label2);
@@ -139,8 +139,7 @@
             this.Controls.Add(this.lblUserName);
             this.Name = "LogInForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "LogInForm";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Text = "Log in";
             this.ResumeLayout(false);
             this.PerformLayout();
 

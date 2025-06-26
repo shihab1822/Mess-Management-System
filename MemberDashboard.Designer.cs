@@ -37,7 +37,7 @@
             this.ClientSize = new System.Drawing.Size(1382, 753);
             this.Name = "MemberDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Welcome";
+            this.Text = "Member Dashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 
