@@ -14,7 +14,7 @@ namespace Mess_Management_System
     public partial class LogInForm : Form
     {
 
-        SqlConnection conn;
+        SqlConnection conn = new SqlConnection("Data Source=hp;Initial Catalog=\"Mess Management System\";Integrated Security=True;TrustServerCertificate=True");
         public LogInForm()
         {
             InitializeComponent();
