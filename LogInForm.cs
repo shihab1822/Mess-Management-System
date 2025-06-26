@@ -68,7 +68,7 @@ namespace Mess_Management_System
 
         private void lblSignUp_Click(object sender, EventArgs e)
         {
-            SignUp sp = new SignUp();
+            SignUpForm sp = new SignUpForm();
             sp.Show(this);
             
         }

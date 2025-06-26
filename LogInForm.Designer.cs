@@ -92,13 +92,14 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(281, 30);
             this.txtPassword.TabIndex = 11;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
             this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.lblPassword.Location = new System.Drawing.Point(482, 319);
+            this.lblPassword.Location = new System.Drawing.Point(482, 324);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(113, 25);
             this.lblPassword.TabIndex = 10;
@@ -117,7 +118,7 @@
             this.lblUserName.AutoSize = true;
             this.lblUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.lblUserName.Location = new System.Drawing.Point(482, 258);
+            this.lblUserName.Location = new System.Drawing.Point(482, 263);
             this.lblUserName.Name = "lblUserName";
             this.lblUserName.Size = new System.Drawing.Size(117, 25);
             this.lblUserName.TabIndex = 8;
