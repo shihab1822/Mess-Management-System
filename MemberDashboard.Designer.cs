@@ -34,11 +34,11 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnAddMember = new System.Windows.Forms.Button();
-            this.btnAddDeposite = new System.Windows.Forms.Button();
+            this.btnRentaFlat = new System.Windows.Forms.Button();
+            this.btnBillsandPayments = new System.Windows.Forms.Button();
             this.btnActiveMonthDetails = new System.Windows.Forms.Button();
-            this.btnAddCost = new System.Windows.Forms.Button();
-            this.btnAddMeal = new System.Windows.Forms.Button();
+            this.btnCommunicationwithHouseOwner = new System.Windows.Forms.Button();
+            this.btnAssignedFlatandRoommates = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -59,7 +59,9 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Cornsilk;
             this.panel1.Controls.Add(this.lblMemberView);
+            this.panel1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1358, 69);
@@ -69,6 +71,7 @@
             // 
             this.lblMemberView.AutoSize = true;
             this.lblMemberView.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMemberView.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.lblMemberView.Location = new System.Drawing.Point(569, 17);
             this.lblMemberView.Name = "lblMemberView";
             this.lblMemberView.Size = new System.Drawing.Size(180, 35);
@@ -77,11 +80,12 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.Cornsilk;
             this.panel2.Controls.Add(this.btnActiveMonthDetails);
-            this.panel2.Controls.Add(this.btnAddCost);
-            this.panel2.Controls.Add(this.btnAddMeal);
-            this.panel2.Controls.Add(this.btnAddDeposite);
-            this.panel2.Controls.Add(this.btnAddMember);
+            this.panel2.Controls.Add(this.btnCommunicationwithHouseOwner);
+            this.panel2.Controls.Add(this.btnAssignedFlatandRoommates);
+            this.panel2.Controls.Add(this.btnBillsandPayments);
+            this.panel2.Controls.Add(this.btnRentaFlat);
             this.panel2.Controls.Add(this.btnhome);
             this.panel2.Location = new System.Drawing.Point(12, 87);
             this.panel2.Name = "panel2";
@@ -105,31 +109,31 @@
             this.dataGridView1.Size = new System.Drawing.Size(926, 646);
             this.dataGridView1.TabIndex = 4;
             // 
-            // btnAddMember
+            // btnRentaFlat
             // 
-            this.btnAddMember.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnAddMember.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddMember.ForeColor = System.Drawing.Color.Gray;
-            this.btnAddMember.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnAddMember.Location = new System.Drawing.Point(3, 80);
-            this.btnAddMember.Name = "btnAddMember";
-            this.btnAddMember.Size = new System.Drawing.Size(204, 61);
-            this.btnAddMember.TabIndex = 1;
-            this.btnAddMember.Text = "Add Member";
-            this.btnAddMember.UseVisualStyleBackColor = false;
+            this.btnRentaFlat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnRentaFlat.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRentaFlat.ForeColor = System.Drawing.Color.Gray;
+            this.btnRentaFlat.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnRentaFlat.Location = new System.Drawing.Point(3, 80);
+            this.btnRentaFlat.Name = "btnRentaFlat";
+            this.btnRentaFlat.Size = new System.Drawing.Size(204, 61);
+            this.btnRentaFlat.TabIndex = 1;
+            this.btnRentaFlat.Text = "Rent a Flat";
+            this.btnRentaFlat.UseVisualStyleBackColor = false;
             // 
-            // btnAddDeposite
+            // btnBillsandPayments
             // 
-            this.btnAddDeposite.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnAddDeposite.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddDeposite.ForeColor = System.Drawing.Color.Gray;
-            this.btnAddDeposite.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnAddDeposite.Location = new System.Drawing.Point(3, 147);
-            this.btnAddDeposite.Name = "btnAddDeposite";
-            this.btnAddDeposite.Size = new System.Drawing.Size(204, 61);
-            this.btnAddDeposite.TabIndex = 2;
-            this.btnAddDeposite.Text = "Add Deposite";
-            this.btnAddDeposite.UseVisualStyleBackColor = false;
+            this.btnBillsandPayments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnBillsandPayments.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBillsandPayments.ForeColor = System.Drawing.Color.Gray;
+            this.btnBillsandPayments.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnBillsandPayments.Location = new System.Drawing.Point(3, 147);
+            this.btnBillsandPayments.Name = "btnBillsandPayments";
+            this.btnBillsandPayments.Size = new System.Drawing.Size(204, 61);
+            this.btnBillsandPayments.TabIndex = 2;
+            this.btnBillsandPayments.Text = "Bills and Payments";
+            this.btnBillsandPayments.UseVisualStyleBackColor = false;
             // 
             // btnActiveMonthDetails
             // 
@@ -143,31 +147,31 @@
             this.btnActiveMonthDetails.Text = "Active Month Details";
             this.btnActiveMonthDetails.UseVisualStyleBackColor = false;
             // 
-            // btnAddCost
+            // btnCommunicationwithHouseOwner
             // 
-            this.btnAddCost.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnAddCost.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddCost.ForeColor = System.Drawing.Color.Gray;
-            this.btnAddCost.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnAddCost.Location = new System.Drawing.Point(3, 281);
-            this.btnAddCost.Name = "btnAddCost";
-            this.btnAddCost.Size = new System.Drawing.Size(204, 61);
-            this.btnAddCost.TabIndex = 4;
-            this.btnAddCost.Text = "Add Cost";
-            this.btnAddCost.UseVisualStyleBackColor = false;
+            this.btnCommunicationwithHouseOwner.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnCommunicationwithHouseOwner.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCommunicationwithHouseOwner.ForeColor = System.Drawing.Color.Gray;
+            this.btnCommunicationwithHouseOwner.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnCommunicationwithHouseOwner.Location = new System.Drawing.Point(3, 281);
+            this.btnCommunicationwithHouseOwner.Name = "btnCommunicationwithHouseOwner";
+            this.btnCommunicationwithHouseOwner.Size = new System.Drawing.Size(204, 61);
+            this.btnCommunicationwithHouseOwner.TabIndex = 4;
+            this.btnCommunicationwithHouseOwner.Text = "Communication with House Owner";
+            this.btnCommunicationwithHouseOwner.UseVisualStyleBackColor = false;
             // 
-            // btnAddMeal
+            // btnAssignedFlatandRoommates
             // 
-            this.btnAddMeal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnAddMeal.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddMeal.ForeColor = System.Drawing.Color.Gray;
-            this.btnAddMeal.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnAddMeal.Location = new System.Drawing.Point(3, 214);
-            this.btnAddMeal.Name = "btnAddMeal";
-            this.btnAddMeal.Size = new System.Drawing.Size(204, 61);
-            this.btnAddMeal.TabIndex = 3;
-            this.btnAddMeal.Text = "Add Meal";
-            this.btnAddMeal.UseVisualStyleBackColor = false;
+            this.btnAssignedFlatandRoommates.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnAssignedFlatandRoommates.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAssignedFlatandRoommates.ForeColor = System.Drawing.Color.Gray;
+            this.btnAssignedFlatandRoommates.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnAssignedFlatandRoommates.Location = new System.Drawing.Point(3, 214);
+            this.btnAssignedFlatandRoommates.Name = "btnAssignedFlatandRoommates";
+            this.btnAssignedFlatandRoommates.Size = new System.Drawing.Size(204, 61);
+            this.btnAssignedFlatandRoommates.TabIndex = 3;
+            this.btnAssignedFlatandRoommates.Text = "Assigned Flat and Roommates";
+            this.btnAssignedFlatandRoommates.UseVisualStyleBackColor = false;
             // 
             // MemberDashboard
             // 
@@ -200,10 +204,10 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnActiveMonthDetails;
-        private System.Windows.Forms.Button btnAddCost;
-        private System.Windows.Forms.Button btnAddMeal;
-        private System.Windows.Forms.Button btnAddDeposite;
-        private System.Windows.Forms.Button btnAddMember;
+        private System.Windows.Forms.Button btnCommunicationwithHouseOwner;
+        private System.Windows.Forms.Button btnAssignedFlatandRoommates;
+        private System.Windows.Forms.Button btnBillsandPayments;
+        private System.Windows.Forms.Button btnRentaFlat;
     }
 }
 
