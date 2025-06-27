@@ -18,6 +18,8 @@ namespace Mess_Management_System
             InitializeComponent();
         }
 
+        SqlConnection conn = new SqlConnection("Data Source=hp;Initial Catalog=\"Mess Management System\";Integrated Security=True;TrustServerCertificate=True");
+
         private void SignUpForm_Load(object sender, EventArgs e)
         {
             if (this.Owner != null)
@@ -36,12 +38,12 @@ namespace Mess_Management_System
 
         private void SaveUserToDatabase(string email, string username, string password, string role)
         {
-            // Update the connection string to match your database
-            string connectionString = "Data Source=hp;Initial Catalog=\"Mess Management System\";Integrated Security=True;TrustServerCertificate=True";
+            
+
             string query = "INSERT INTO Users (Email, Username, Password, Role) VALUES (@Email, @Username, @Password, @Role)";
 
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            using (SqlCommand cmd = new SqlCommand(query, conn))
+
+            SqlCommand cmd = new SqlCommand(query, conn);
             {
                 cmd.Parameters.AddWithValue("@Email", email);
                 cmd.Parameters.AddWithValue("@Username", username);
@@ -78,6 +80,14 @@ namespace Mess_Management_System
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
+            finally
+            {
+                if (conn.State == ConnectionState.Open)
+                {
+                    conn.Close();
+                }
+            }
+
         }
     }
 }
