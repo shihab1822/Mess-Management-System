@@ -66,13 +66,14 @@
             // 
             // btnSignUp
             // 
+            this.btnSignUp.BackColor = System.Drawing.Color.LightGreen;
             this.btnSignUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignUp.Location = new System.Drawing.Point(584, 497);
             this.btnSignUp.Name = "btnSignUp";
             this.btnSignUp.Size = new System.Drawing.Size(190, 45);
             this.btnSignUp.TabIndex = 20;
             this.btnSignUp.Text = "Sign up";
-            this.btnSignUp.UseVisualStyleBackColor = true;
+            this.btnSignUp.UseVisualStyleBackColor = false;
             this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
             // 
             // txtEmail
@@ -132,10 +133,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(606, 125);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(145, 29);
+            this.label1.Size = new System.Drawing.Size(170, 32);
             this.label1.TabIndex = 13;
             this.label1.Text = "Get Started";
             // 
