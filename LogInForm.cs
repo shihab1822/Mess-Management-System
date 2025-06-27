@@ -25,44 +25,55 @@ namespace Mess_Management_System
             string username = txtUsername.Text;
             string password = txtPassword.Text;
 
-            // Authenticate user from database
             string query = "SELECT * FROM Users WHERE Username=@username AND Password=@password";
-            SqlCommand cmd = new SqlCommand(query, conn);
-            cmd.Parameters.AddWithValue("@username", username);
-            cmd.Parameters.AddWithValue("@password", password);
-
-            SqlDataReader reader = cmd.ExecuteReader();
-
-            if (reader.Read())
+            using (SqlCommand cmd = new SqlCommand(query, conn))
             {
-                string role = reader["Role"].ToString();
-                switch (role)
+                cmd.Parameters.AddWithValue("@username", username);
+                cmd.Parameters.AddWithValue("@password", password);
+
+                try
                 {
-                    case "Manager":
-                        ManagerDashboard managerDashboard = new ManagerDashboard();
-                        managerDashboard.Show();
-                        break;
-                    case "Member":
-                        MemberDashboard memberDashboard = new MemberDashboard();
-                        memberDashboard.Show();
-                        break;
-                    case "HouseOwner":
-                        HouseOwnerDashboard houseOwnerDashboard = new HouseOwnerDashboard();
-                        houseOwnerDashboard.Show();
-                        break;
-                    case "Chief":
-                        ChiefDashboard chiefDashboard = new ChiefDashboard();
-                        chiefDashboard.Show();
-                        break;
-                    default:
-                        MessageBox.Show("Invalid role");
-                        break;
+                    conn.Open();
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            string role = reader["Role"].ToString();
+                            switch (role)
+                            {
+                                case "Manager":
+                                    new ManagerDashboard().Show();
+                                    break;
+                                case "Member":
+                                    new MemberDashboard().Show();
+                                    break;
+                                case "HouseOwner":
+                                    new HouseOwnerDashboard().Show();
+                                    break;
+                                case "Chief":
+                                    new ChiefDashboard().Show();
+                                    break;
+                                default:
+                                    MessageBox.Show("Invalid role");
+                                    break;
+                            }
+                            this.Hide();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Invalid username or password.");
+                        }
+                    }
                 }
-                this.Hide();
-            }
-            else
-            {
-                MessageBox.Show("Invalid username or password.");
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+                finally
+                {
+                    if (conn.State == ConnectionState.Open)
+                        conn.Close();
+                }
             }
         }
 
@@ -70,7 +81,7 @@ namespace Mess_Management_System
         {
             SignUpForm sp = new SignUpForm();
             sp.Show(this);
-            
+
         }
     }
 }
