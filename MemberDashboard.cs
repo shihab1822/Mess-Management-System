@@ -17,12 +17,18 @@ namespace Mess_Management_System
             InitializeComponent();
         }
 
+        private string _username;
+        public MemberDashboard(string username) : this()
+        {
+            _username = username;
+        }
         private void MemberDashboard_Load(object sender, EventArgs e)
         {
             if (this.Owner != null)
             {
                 this.Owner.Hide(); // Hide the parent form if it exists
             }
+            lblWelUserName.Text = $"Welcome, {_username}";
         }
 
         private void MemberDashboard_FormClosing(object sender, FormClosingEventArgs e)
@@ -31,6 +37,11 @@ namespace Mess_Management_System
             {
                 this.Owner.Show(); // show  the parent form if it exists
             }
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

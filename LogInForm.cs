@@ -44,16 +44,16 @@ namespace Mess_Management_System
                             switch (role)
                             {
                                 case "Manager":
-                                    new ManagerDashboard().Show(this);
+                                    new ManagerDashboard(username).Show(this);
                                     break;
                                 case "Member":
-                                    new MemberDashboard().Show(this);
+                                    new MemberDashboard(username).Show(this);
                                     break;
                                 case "HouseOwner":
-                                    new HouseOwnerDashboard().Show(this);
+                                    new HouseOwnerDashboard(username).Show(this);
                                     break;
                                 case "Chief":
-                                    new ChiefDashboard().Show(this);
+                                    new ChiefDashboard(username).Show(this);
                                     break;
                                 default:
                                     MessageBox.Show("Invalid role");

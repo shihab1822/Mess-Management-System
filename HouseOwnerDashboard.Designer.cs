@@ -87,7 +87,7 @@
             // 
             this.btnSave.BackColor = System.Drawing.Color.Orange;
             this.btnSave.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(66, 509);
+            this.btnSave.Location = new System.Drawing.Point(66, 599);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(146, 39);
             this.btnSave.TabIndex = 3;
@@ -245,7 +245,7 @@
             this.lblWelUserName.AutoSize = true;
             this.lblWelUserName.Font = new System.Drawing.Font("Calibri", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWelUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.lblWelUserName.Location = new System.Drawing.Point(284, 2);
+            this.lblWelUserName.Location = new System.Drawing.Point(294, 2);
             this.lblWelUserName.Name = "lblWelUserName";
             this.lblWelUserName.Size = new System.Drawing.Size(400, 53);
             this.lblWelUserName.TabIndex = 1;
@@ -265,6 +265,8 @@
             this.Name = "HouseOwnerDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "House Owner Dashboard";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.HouseOwnerDashboard_FormClosing);
+            this.Load += new System.EventHandler(this.HouseOwnerDashboard_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
