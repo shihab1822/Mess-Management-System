@@ -38,9 +38,16 @@
             this.btnCommunicationwithManager = new System.Windows.Forms.Button();
             this.btnUpdateMealCosts = new System.Windows.Forms.Button();
             this.btnMealData = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChief)).BeginInit();
+            this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -70,7 +77,7 @@
             this.dgvChief.Name = "dgvChief";
             this.dgvChief.RowHeadersWidth = 51;
             this.dgvChief.RowTemplate.Height = 24;
-            this.dgvChief.Size = new System.Drawing.Size(926, 646);
+            this.dgvChief.Size = new System.Drawing.Size(926, 588);
             this.dgvChief.TabIndex = 12;
             // 
             // btnhome
@@ -88,6 +95,7 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.btnSave);
             this.panel3.Location = new System.Drawing.Point(1160, 91);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(210, 646);
@@ -157,11 +165,62 @@
             this.btnMealData.Text = "Meal Data";
             this.btnMealData.UseVisualStyleBackColor = false;
             // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.button1);
+            this.panel5.Controls.Add(this.button3);
+            this.panel5.Controls.Add(this.button2);
+            this.panel5.Location = new System.Drawing.Point(228, 685);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(926, 52);
+            this.panel5.TabIndex = 11;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(715, 7);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(146, 39);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Delete";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(59, 7);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(146, 39);
+            this.button3.TabIndex = 11;
+            this.button3.Text = "Create";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(387, 7);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(146, 39);
+            this.button2.TabIndex = 12;
+            this.button2.Text = "Update";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // btnSave
+            // 
+            this.btnSave.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Location = new System.Drawing.Point(34, 375);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(146, 39);
+            this.btnSave.TabIndex = 13;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            // 
             // ChiefDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1382, 753);
+            this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgvChief);
             this.Controls.Add(this.panel3);
@@ -174,7 +233,9 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChief)).EndInit();
+            this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -191,5 +252,10 @@
         private System.Windows.Forms.Button btnCommunicationwithManager;
         private System.Windows.Forms.Button btnUpdateMealCosts;
         private System.Windows.Forms.Button btnMealData;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnSave;
     }
 }
