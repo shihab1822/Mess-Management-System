@@ -44,11 +44,13 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.lblWelUserName = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHouseOwner)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -232,10 +234,22 @@
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.lblWelUserName);
             this.panel4.Location = new System.Drawing.Point(378, 16);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(991, 59);
             this.panel4.TabIndex = 18;
+            // 
+            // lblWelUserName
+            // 
+            this.lblWelUserName.AutoSize = true;
+            this.lblWelUserName.Font = new System.Drawing.Font("Calibri", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWelUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.lblWelUserName.Location = new System.Drawing.Point(284, 2);
+            this.lblWelUserName.Name = "lblWelUserName";
+            this.lblWelUserName.Size = new System.Drawing.Size(400, 53);
+            this.lblWelUserName.TabIndex = 1;
+            this.lblWelUserName.Text = "Welcome, UserName";
             // 
             // HouseOwnerDashboard
             // 
@@ -257,6 +271,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvHouseOwner)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -279,5 +295,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label lblWelUserName;
     }
 }

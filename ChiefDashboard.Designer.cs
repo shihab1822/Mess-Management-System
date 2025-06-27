@@ -44,10 +44,12 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblHouseOwnerView = new System.Windows.Forms.Label();
+            this.lblWelUserName = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChief)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -211,6 +213,7 @@
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.lblWelUserName);
             this.panel4.Location = new System.Drawing.Point(379, 15);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(991, 59);
@@ -237,6 +240,17 @@
             this.lblHouseOwnerView.TabIndex = 0;
             this.lblHouseOwnerView.Text = "Chief";
             // 
+            // lblWelUserName
+            // 
+            this.lblWelUserName.AutoSize = true;
+            this.lblWelUserName.Font = new System.Drawing.Font("Calibri", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWelUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.lblWelUserName.Location = new System.Drawing.Point(294, 2);
+            this.lblWelUserName.Name = "lblWelUserName";
+            this.lblWelUserName.Size = new System.Drawing.Size(400, 53);
+            this.lblWelUserName.TabIndex = 2;
+            this.lblWelUserName.Text = "Welcome, UserName";
+            // 
             // ChiefDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -257,6 +271,8 @@
             this.panel2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -280,5 +296,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblHouseOwnerView;
+        private System.Windows.Forms.Label lblWelUserName;
     }
 }

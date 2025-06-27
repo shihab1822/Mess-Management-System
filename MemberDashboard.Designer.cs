@@ -45,10 +45,12 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.lblHouseOwnerView = new System.Windows.Forms.Label();
+            this.lblWelUserName = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMember)).BeginInit();
             this.panel4.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -227,6 +229,7 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.lblWelUserName);
             this.panel1.Location = new System.Drawing.Point(379, 15);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(991, 59);
@@ -253,6 +256,17 @@
             this.lblHouseOwnerView.TabIndex = 0;
             this.lblHouseOwnerView.Text = "Member";
             // 
+            // lblWelUserName
+            // 
+            this.lblWelUserName.AutoSize = true;
+            this.lblWelUserName.Font = new System.Drawing.Font("Calibri", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWelUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.lblWelUserName.Location = new System.Drawing.Point(294, 2);
+            this.lblWelUserName.Name = "lblWelUserName";
+            this.lblWelUserName.Size = new System.Drawing.Size(400, 53);
+            this.lblWelUserName.TabIndex = 2;
+            this.lblWelUserName.Text = "Welcome, UserName";
+            // 
             // MemberDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -273,6 +287,8 @@
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMember)).EndInit();
             this.panel4.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.ResumeLayout(false);
@@ -298,6 +314,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label lblHouseOwnerView;
+        private System.Windows.Forms.Label lblWelUserName;
     }
 }
 
