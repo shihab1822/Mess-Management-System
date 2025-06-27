@@ -36,6 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1382, 753);
             this.Name = "ChiefDashboard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chief Dashboard";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ChiefDashboard_FormClosing);
             this.Load += new System.EventHandler(this.ChiefDashboard_Load);
