@@ -31,7 +31,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblManagerView = new System.Windows.Forms.Label();
             this.btnhome = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvManager = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnAnnouncements = new System.Windows.Forms.Button();
@@ -40,7 +40,7 @@
             this.btnAssignChiefs = new System.Windows.Forms.Button();
             this.btnManageMembers = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvManager)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,15 +77,15 @@
             this.btnhome.Text = "Home";
             this.btnhome.UseVisualStyleBackColor = false;
             // 
-            // dataGridView1
+            // dgvManager
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(228, 91);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(926, 646);
-            this.dataGridView1.TabIndex = 8;
+            this.dgvManager.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvManager.Location = new System.Drawing.Point(228, 91);
+            this.dgvManager.Name = "dgvManager";
+            this.dgvManager.RowHeadersWidth = 51;
+            this.dgvManager.RowTemplate.Height = 24;
+            this.dgvManager.Size = new System.Drawing.Size(926, 646);
+            this.dgvManager.TabIndex = 8;
             // 
             // panel3
             // 
@@ -179,7 +179,7 @@
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1382, 753);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvManager);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Name = "ManagerDashboard";
@@ -189,7 +189,7 @@
             this.Load += new System.EventHandler(this.ManagerDashboard_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvManager)).EndInit();
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -200,7 +200,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblManagerView;
         private System.Windows.Forms.Button btnhome;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvManager;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnAnnouncements;

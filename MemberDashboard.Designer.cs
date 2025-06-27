@@ -32,16 +32,16 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblMemberView = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnRentaFlat = new System.Windows.Forms.Button();
-            this.btnBillsandPayments = new System.Windows.Forms.Button();
             this.btnActiveMonthDetails = new System.Windows.Forms.Button();
             this.btnCommunicationwithHouseOwner = new System.Windows.Forms.Button();
             this.btnAssignedFlatandRoommates = new System.Windows.Forms.Button();
+            this.btnBillsandPayments = new System.Windows.Forms.Button();
+            this.btnRentaFlat = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.dgvMember = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMember)).BeginInit();
             this.SuspendLayout();
             // 
             // btnhome
@@ -92,49 +92,6 @@
             this.panel2.Size = new System.Drawing.Size(210, 646);
             this.panel2.TabIndex = 2;
             // 
-            // panel3
-            // 
-            this.panel3.Location = new System.Drawing.Point(1160, 87);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(210, 646);
-            this.panel3.TabIndex = 3;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(228, 87);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(926, 646);
-            this.dataGridView1.TabIndex = 4;
-            // 
-            // btnRentaFlat
-            // 
-            this.btnRentaFlat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnRentaFlat.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRentaFlat.ForeColor = System.Drawing.Color.Gray;
-            this.btnRentaFlat.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnRentaFlat.Location = new System.Drawing.Point(3, 80);
-            this.btnRentaFlat.Name = "btnRentaFlat";
-            this.btnRentaFlat.Size = new System.Drawing.Size(204, 61);
-            this.btnRentaFlat.TabIndex = 1;
-            this.btnRentaFlat.Text = "Rent a Flat";
-            this.btnRentaFlat.UseVisualStyleBackColor = false;
-            // 
-            // btnBillsandPayments
-            // 
-            this.btnBillsandPayments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnBillsandPayments.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBillsandPayments.ForeColor = System.Drawing.Color.Gray;
-            this.btnBillsandPayments.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnBillsandPayments.Location = new System.Drawing.Point(3, 147);
-            this.btnBillsandPayments.Name = "btnBillsandPayments";
-            this.btnBillsandPayments.Size = new System.Drawing.Size(204, 61);
-            this.btnBillsandPayments.TabIndex = 2;
-            this.btnBillsandPayments.Text = "Bills and Payments";
-            this.btnBillsandPayments.UseVisualStyleBackColor = false;
-            // 
             // btnActiveMonthDetails
             // 
             this.btnActiveMonthDetails.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
@@ -173,12 +130,55 @@
             this.btnAssignedFlatandRoommates.Text = "Assigned Flat and Roommates";
             this.btnAssignedFlatandRoommates.UseVisualStyleBackColor = false;
             // 
+            // btnBillsandPayments
+            // 
+            this.btnBillsandPayments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnBillsandPayments.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBillsandPayments.ForeColor = System.Drawing.Color.Gray;
+            this.btnBillsandPayments.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnBillsandPayments.Location = new System.Drawing.Point(3, 147);
+            this.btnBillsandPayments.Name = "btnBillsandPayments";
+            this.btnBillsandPayments.Size = new System.Drawing.Size(204, 61);
+            this.btnBillsandPayments.TabIndex = 2;
+            this.btnBillsandPayments.Text = "Bills and Payments";
+            this.btnBillsandPayments.UseVisualStyleBackColor = false;
+            // 
+            // btnRentaFlat
+            // 
+            this.btnRentaFlat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnRentaFlat.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRentaFlat.ForeColor = System.Drawing.Color.Gray;
+            this.btnRentaFlat.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnRentaFlat.Location = new System.Drawing.Point(3, 80);
+            this.btnRentaFlat.Name = "btnRentaFlat";
+            this.btnRentaFlat.Size = new System.Drawing.Size(204, 61);
+            this.btnRentaFlat.TabIndex = 1;
+            this.btnRentaFlat.Text = "Rent a Flat";
+            this.btnRentaFlat.UseVisualStyleBackColor = false;
+            // 
+            // panel3
+            // 
+            this.panel3.Location = new System.Drawing.Point(1160, 87);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(210, 646);
+            this.panel3.TabIndex = 3;
+            // 
+            // dgvMember
+            // 
+            this.dgvMember.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMember.Location = new System.Drawing.Point(228, 87);
+            this.dgvMember.Name = "dgvMember";
+            this.dgvMember.RowHeadersWidth = 51;
+            this.dgvMember.RowTemplate.Height = 24;
+            this.dgvMember.Size = new System.Drawing.Size(926, 646);
+            this.dgvMember.TabIndex = 4;
+            // 
             // MemberDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1382, 753);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvMember);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -190,7 +190,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMember)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -202,7 +202,7 @@
         private System.Windows.Forms.Label lblMemberView;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvMember;
         private System.Windows.Forms.Button btnActiveMonthDetails;
         private System.Windows.Forms.Button btnCommunicationwithHouseOwner;
         private System.Windows.Forms.Button btnAssignedFlatandRoommates;

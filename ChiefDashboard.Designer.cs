@@ -30,7 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblChiefView = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvChief = new System.Windows.Forms.DataGridView();
             this.btnhome = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -39,7 +39,7 @@
             this.btnUpdateMealCosts = new System.Windows.Forms.Button();
             this.btnMealData = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvChief)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,15 +63,15 @@
             this.lblChiefView.TabIndex = 0;
             this.lblChiefView.Text = "Chief View";
             // 
-            // dataGridView1
+            // dgvChief
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(228, 91);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(926, 646);
-            this.dataGridView1.TabIndex = 12;
+            this.dgvChief.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvChief.Location = new System.Drawing.Point(228, 91);
+            this.dgvChief.Name = "dgvChief";
+            this.dgvChief.RowHeadersWidth = 51;
+            this.dgvChief.RowTemplate.Height = 24;
+            this.dgvChief.Size = new System.Drawing.Size(926, 646);
+            this.dgvChief.TabIndex = 12;
             // 
             // btnhome
             // 
@@ -163,7 +163,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1382, 753);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvChief);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Name = "ChiefDashboard";
@@ -173,7 +173,7 @@
             this.Load += new System.EventHandler(this.ChiefDashboard_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvChief)).EndInit();
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -183,7 +183,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblChiefView;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvChief;
         private System.Windows.Forms.Button btnhome;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;

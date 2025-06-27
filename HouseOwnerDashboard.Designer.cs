@@ -31,7 +31,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblHouseOwnerView = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvHouseOwner = new System.Windows.Forms.DataGridView();
             this.btnhome = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnAnnouncements = new System.Windows.Forms.Button();
@@ -39,7 +39,7 @@
             this.btnRentedFlatsandIncome = new System.Windows.Forms.Button();
             this.btnAdvertiseFlats = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHouseOwner)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,15 +70,15 @@
             this.panel3.Size = new System.Drawing.Size(210, 646);
             this.panel3.TabIndex = 15;
             // 
-            // dataGridView1
+            // dgvHouseOwner
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(228, 91);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(926, 646);
-            this.dataGridView1.TabIndex = 16;
+            this.dgvHouseOwner.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvHouseOwner.Location = new System.Drawing.Point(228, 91);
+            this.dgvHouseOwner.Name = "dgvHouseOwner";
+            this.dgvHouseOwner.RowHeadersWidth = 51;
+            this.dgvHouseOwner.RowTemplate.Height = 24;
+            this.dgvHouseOwner.Size = new System.Drawing.Size(926, 646);
+            this.dgvHouseOwner.TabIndex = 16;
             // 
             // btnhome
             // 
@@ -164,14 +164,14 @@
             this.ClientSize = new System.Drawing.Size(1382, 753);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvHouseOwner);
             this.Controls.Add(this.panel2);
             this.Name = "HouseOwnerDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "House Owner Dashboard";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHouseOwner)).EndInit();
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -182,7 +182,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblHouseOwnerView;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvHouseOwner;
         private System.Windows.Forms.Button btnhome;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnAnnouncements;
