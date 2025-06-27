@@ -16,5 +16,21 @@ namespace Mess_Management_System
         {
             InitializeComponent();
         }
+
+        private void ChiefDashboard_Load(object sender, EventArgs e)
+        {
+            if (this.Owner != null)
+            {
+                this.Owner.Hide(); // Hide the parent form if it exists
+            }
+        }
+
+        private void ChiefDashboard_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (this.Owner != null)
+            {
+                this.Owner.Show(); // Hide the parent form if it exists
+            }
+        }
     }
 }

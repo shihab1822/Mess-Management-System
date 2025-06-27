@@ -15,6 +15,7 @@ namespace Mess_Management_System
     {
 
         SqlConnection conn = new SqlConnection("Data Source=hp;Initial Catalog=\"Mess Management System\";Integrated Security=True;TrustServerCertificate=True");
+        
         public LogInForm()
         {
             InitializeComponent();
@@ -24,6 +25,7 @@ namespace Mess_Management_System
         {
             string username = txtUsername.Text;
             string password = txtPassword.Text;
+            string role;
 
             string query = "SELECT * FROM Users WHERE Username=@username AND Password=@password";
             using (SqlCommand cmd = new SqlCommand(query, conn))
@@ -38,20 +40,20 @@ namespace Mess_Management_System
                     {
                         if (reader.Read())
                         {
-                            string role = reader["Role"].ToString();
+                            role = reader["Role"].ToString();
                             switch (role)
                             {
                                 case "Manager":
-                                    new ManagerDashboard().Show();
+                                    new ManagerDashboard().Show(this);
                                     break;
                                 case "Member":
-                                    new MemberDashboard().Show();
+                                    new MemberDashboard().Show(this);
                                     break;
                                 case "HouseOwner":
-                                    new HouseOwnerDashboard().Show();
+                                    new HouseOwnerDashboard().Show(this);
                                     break;
                                 case "Chief":
-                                    new ChiefDashboard().Show();
+                                    new ChiefDashboard().Show(this);
                                     break;
                                 default:
                                     MessageBox.Show("Invalid role");
