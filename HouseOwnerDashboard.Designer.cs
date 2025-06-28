@@ -48,8 +48,8 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txtIncome = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblnote = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.panel1.SuspendLayout();
             this.penalFlatsAndIncome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHouseOwner)).BeginInit();
@@ -83,7 +83,7 @@
             // penalFlatsAndIncome
             // 
             this.penalFlatsAndIncome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.penalFlatsAndIncome.Controls.Add(this.textBox1);
+            this.penalFlatsAndIncome.Controls.Add(this.richTextBox1);
             this.penalFlatsAndIncome.Controls.Add(this.lblnote);
             this.penalFlatsAndIncome.Controls.Add(this.cmbFlatNo);
             this.penalFlatsAndIncome.Controls.Add(this.label5);
@@ -284,15 +284,6 @@
             this.txtIncome.Size = new System.Drawing.Size(184, 27);
             this.txtIncome.TabIndex = 28;
             // 
-            // textBox1
-            // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(40, 206);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(184, 41);
-            this.textBox1.TabIndex = 36;
-            // 
             // lblnote
             // 
             this.lblnote.AutoSize = true;
@@ -302,6 +293,14 @@
             this.lblnote.Size = new System.Drawing.Size(49, 20);
             this.lblnote.TabIndex = 35;
             this.lblnote.Text = "Note:";
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(44, 206);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(181, 92);
+            this.richTextBox1.TabIndex = 37;
+            this.richTextBox1.Text = "";
             // 
             // HouseOwnerDashboard
             // 
@@ -354,9 +353,9 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.ComboBox cmbFlatNo;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lblnote;
         private System.Windows.Forms.TextBox txtIncome;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
