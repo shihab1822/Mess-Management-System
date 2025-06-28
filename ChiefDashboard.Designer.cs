@@ -32,7 +32,6 @@
             this.btnhome = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnAnnouncements = new System.Windows.Forms.Button();
-            this.btnMealCosts = new System.Windows.Forms.Button();
             this.btnMealData = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
@@ -45,9 +44,14 @@
             this.lblHouseOwnerView = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btnSave = new System.Windows.Forms.Button();
+            this.lblFoodDescription = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.dtpJoiningDate = new System.Windows.Forms.DateTimePicker();
+            this.lblMealDate = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChief)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -82,7 +86,6 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.btnAnnouncements);
-            this.panel2.Controls.Add(this.btnMealCosts);
             this.panel2.Controls.Add(this.btnMealData);
             this.panel2.Controls.Add(this.btnhome);
             this.panel2.Location = new System.Drawing.Point(12, 91);
@@ -96,26 +99,12 @@
             this.btnAnnouncements.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnAnnouncements.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAnnouncements.ForeColor = System.Drawing.Color.Gray;
-            this.btnAnnouncements.Location = new System.Drawing.Point(0, 183);
+            this.btnAnnouncements.Location = new System.Drawing.Point(0, 122);
             this.btnAnnouncements.Name = "btnAnnouncements";
             this.btnAnnouncements.Size = new System.Drawing.Size(208, 61);
             this.btnAnnouncements.TabIndex = 5;
             this.btnAnnouncements.Text = "Announcements";
             this.btnAnnouncements.UseVisualStyleBackColor = false;
-            // 
-            // btnMealCosts
-            // 
-            this.btnMealCosts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnMealCosts.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMealCosts.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMealCosts.ForeColor = System.Drawing.Color.Gray;
-            this.btnMealCosts.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnMealCosts.Location = new System.Drawing.Point(0, 122);
-            this.btnMealCosts.Name = "btnMealCosts";
-            this.btnMealCosts.Size = new System.Drawing.Size(208, 61);
-            this.btnMealCosts.TabIndex = 2;
-            this.btnMealCosts.Text = "Meal Costs";
-            this.btnMealCosts.UseVisualStyleBackColor = false;
             // 
             // btnMealData
             // 
@@ -178,6 +167,10 @@
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.dtpJoiningDate);
+            this.panel3.Controls.Add(this.lblMealDate);
+            this.panel3.Controls.Add(this.richTextBox1);
+            this.panel3.Controls.Add(this.lblFoodDescription);
             this.panel3.Location = new System.Drawing.Point(1091, 92);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(279, 587);
@@ -245,6 +238,43 @@
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
             // 
+            // lblFoodDescription
+            // 
+            this.lblFoodDescription.AutoSize = true;
+            this.lblFoodDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFoodDescription.Location = new System.Drawing.Point(38, 104);
+            this.lblFoodDescription.Name = "lblFoodDescription";
+            this.lblFoodDescription.Size = new System.Drawing.Size(142, 20);
+            this.lblFoodDescription.TabIndex = 29;
+            this.lblFoodDescription.Text = "Food Description:";
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(38, 127);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(184, 95);
+            this.richTextBox1.TabIndex = 33;
+            this.richTextBox1.Text = "";
+            // 
+            // dtpJoiningDate
+            // 
+            this.dtpJoiningDate.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpJoiningDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpJoiningDate.Location = new System.Drawing.Point(38, 60);
+            this.dtpJoiningDate.Name = "dtpJoiningDate";
+            this.dtpJoiningDate.Size = new System.Drawing.Size(189, 27);
+            this.dtpJoiningDate.TabIndex = 35;
+            // 
+            // lblMealDate
+            // 
+            this.lblMealDate.AutoSize = true;
+            this.lblMealDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMealDate.Location = new System.Drawing.Point(38, 29);
+            this.lblMealDate.Name = "lblMealDate";
+            this.lblMealDate.Size = new System.Drawing.Size(91, 20);
+            this.lblMealDate.TabIndex = 34;
+            this.lblMealDate.Text = "Meal Date:";
+            // 
             // ChiefDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -265,6 +295,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvChief)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -279,7 +311,6 @@
         private System.Windows.Forms.Button btnhome;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnAnnouncements;
-        private System.Windows.Forms.Button btnMealCosts;
         private System.Windows.Forms.Button btnMealData;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button button1;
@@ -292,5 +323,9 @@
         private System.Windows.Forms.Label lblWelUserName;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Label lblFoodDescription;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.DateTimePicker dtpJoiningDate;
+        private System.Windows.Forms.Label lblMealDate;
     }
 }
