@@ -32,8 +32,7 @@
             this.btnhome = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnAnnouncements = new System.Windows.Forms.Button();
-            this.btnCommunicationwithManager = new System.Windows.Forms.Button();
-            this.btnUpdateMealCosts = new System.Windows.Forms.Button();
+            this.btnMealCosts = new System.Windows.Forms.Button();
             this.btnMealData = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
@@ -41,9 +40,9 @@
             this.button2 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.lblWelUserName = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblHouseOwnerView = new System.Windows.Forms.Label();
-            this.lblWelUserName = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btnSave = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChief)).BeginInit();
@@ -83,8 +82,7 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.btnAnnouncements);
-            this.panel2.Controls.Add(this.btnCommunicationwithManager);
-            this.panel2.Controls.Add(this.btnUpdateMealCosts);
+            this.panel2.Controls.Add(this.btnMealCosts);
             this.panel2.Controls.Add(this.btnMealData);
             this.panel2.Controls.Add(this.btnhome);
             this.panel2.Location = new System.Drawing.Point(12, 91);
@@ -98,40 +96,26 @@
             this.btnAnnouncements.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnAnnouncements.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAnnouncements.ForeColor = System.Drawing.Color.Gray;
-            this.btnAnnouncements.Location = new System.Drawing.Point(0, 244);
+            this.btnAnnouncements.Location = new System.Drawing.Point(0, 183);
             this.btnAnnouncements.Name = "btnAnnouncements";
             this.btnAnnouncements.Size = new System.Drawing.Size(208, 61);
             this.btnAnnouncements.TabIndex = 5;
             this.btnAnnouncements.Text = "Announcements";
             this.btnAnnouncements.UseVisualStyleBackColor = false;
             // 
-            // btnCommunicationwithManager
+            // btnMealCosts
             // 
-            this.btnCommunicationwithManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnCommunicationwithManager.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCommunicationwithManager.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCommunicationwithManager.ForeColor = System.Drawing.Color.Gray;
-            this.btnCommunicationwithManager.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnCommunicationwithManager.Location = new System.Drawing.Point(0, 183);
-            this.btnCommunicationwithManager.Name = "btnCommunicationwithManager";
-            this.btnCommunicationwithManager.Size = new System.Drawing.Size(208, 61);
-            this.btnCommunicationwithManager.TabIndex = 3;
-            this.btnCommunicationwithManager.Text = "Communication with Manager";
-            this.btnCommunicationwithManager.UseVisualStyleBackColor = false;
-            // 
-            // btnUpdateMealCosts
-            // 
-            this.btnUpdateMealCosts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnUpdateMealCosts.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnUpdateMealCosts.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdateMealCosts.ForeColor = System.Drawing.Color.Gray;
-            this.btnUpdateMealCosts.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnUpdateMealCosts.Location = new System.Drawing.Point(0, 122);
-            this.btnUpdateMealCosts.Name = "btnUpdateMealCosts";
-            this.btnUpdateMealCosts.Size = new System.Drawing.Size(208, 61);
-            this.btnUpdateMealCosts.TabIndex = 2;
-            this.btnUpdateMealCosts.Text = "Update Meal Costs";
-            this.btnUpdateMealCosts.UseVisualStyleBackColor = false;
+            this.btnMealCosts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnMealCosts.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMealCosts.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMealCosts.ForeColor = System.Drawing.Color.Gray;
+            this.btnMealCosts.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnMealCosts.Location = new System.Drawing.Point(0, 122);
+            this.btnMealCosts.Name = "btnMealCosts";
+            this.btnMealCosts.Size = new System.Drawing.Size(208, 61);
+            this.btnMealCosts.TabIndex = 2;
+            this.btnMealCosts.Text = "Meal Costs";
+            this.btnMealCosts.UseVisualStyleBackColor = false;
             // 
             // btnMealData
             // 
@@ -208,6 +192,17 @@
             this.panel4.Size = new System.Drawing.Size(991, 59);
             this.panel4.TabIndex = 20;
             // 
+            // lblWelUserName
+            // 
+            this.lblWelUserName.AutoSize = true;
+            this.lblWelUserName.Font = new System.Drawing.Font("Calibri", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWelUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.lblWelUserName.Location = new System.Drawing.Point(294, 2);
+            this.lblWelUserName.Name = "lblWelUserName";
+            this.lblWelUserName.Size = new System.Drawing.Size(400, 53);
+            this.lblWelUserName.TabIndex = 2;
+            this.lblWelUserName.Text = "Welcome, UserName";
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
@@ -228,17 +223,6 @@
             this.lblHouseOwnerView.Size = new System.Drawing.Size(116, 53);
             this.lblHouseOwnerView.TabIndex = 0;
             this.lblHouseOwnerView.Text = "Chief";
-            // 
-            // lblWelUserName
-            // 
-            this.lblWelUserName.AutoSize = true;
-            this.lblWelUserName.Font = new System.Drawing.Font("Calibri", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWelUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.lblWelUserName.Location = new System.Drawing.Point(294, 2);
-            this.lblWelUserName.Name = "lblWelUserName";
-            this.lblWelUserName.Size = new System.Drawing.Size(400, 53);
-            this.lblWelUserName.TabIndex = 2;
-            this.lblWelUserName.Text = "Welcome, UserName";
             // 
             // panel6
             // 
@@ -295,8 +279,7 @@
         private System.Windows.Forms.Button btnhome;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnAnnouncements;
-        private System.Windows.Forms.Button btnCommunicationwithManager;
-        private System.Windows.Forms.Button btnUpdateMealCosts;
+        private System.Windows.Forms.Button btnMealCosts;
         private System.Windows.Forms.Button btnMealData;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button button1;
