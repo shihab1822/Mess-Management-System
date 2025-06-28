@@ -30,6 +30,8 @@
         {
             this.btnhome = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnAnnouncements = new System.Windows.Forms.Button();
+            this.btnBillingInformation = new System.Windows.Forms.Button();
             this.btnPayments = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dgvMember = new System.Windows.Forms.DataGridView();
@@ -43,9 +45,14 @@
             this.lblHouseOwnerView = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btnSave = new System.Windows.Forms.Button();
-            this.btnBillingInformation = new System.Windows.Forms.Button();
-            this.btnAnnouncements = new System.Windows.Forms.Button();
+            this.txtRentPay = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtUtilityPay = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dtpPayDate = new System.Windows.Forms.DateTimePicker();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMember)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -81,6 +88,33 @@
             this.panel2.Size = new System.Drawing.Size(210, 646);
             this.panel2.TabIndex = 2;
             // 
+            // btnAnnouncements
+            // 
+            this.btnAnnouncements.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnAnnouncements.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAnnouncements.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnnouncements.ForeColor = System.Drawing.Color.Gray;
+            this.btnAnnouncements.Location = new System.Drawing.Point(0, 183);
+            this.btnAnnouncements.Name = "btnAnnouncements";
+            this.btnAnnouncements.Size = new System.Drawing.Size(208, 61);
+            this.btnAnnouncements.TabIndex = 8;
+            this.btnAnnouncements.Text = "Announcements";
+            this.btnAnnouncements.UseVisualStyleBackColor = false;
+            // 
+            // btnBillingInformation
+            // 
+            this.btnBillingInformation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnBillingInformation.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBillingInformation.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBillingInformation.ForeColor = System.Drawing.Color.Gray;
+            this.btnBillingInformation.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnBillingInformation.Location = new System.Drawing.Point(0, 122);
+            this.btnBillingInformation.Name = "btnBillingInformation";
+            this.btnBillingInformation.Size = new System.Drawing.Size(208, 61);
+            this.btnBillingInformation.TabIndex = 7;
+            this.btnBillingInformation.Text = "Billing Information";
+            this.btnBillingInformation.UseVisualStyleBackColor = false;
+            // 
             // btnPayments
             // 
             this.btnPayments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
@@ -99,6 +133,12 @@
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.dtpPayDate);
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.txtUtilityPay);
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Controls.Add(this.txtRentPay);
+            this.panel3.Controls.Add(this.label2);
             this.panel3.Location = new System.Drawing.Point(1091, 91);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(279, 587);
@@ -220,32 +260,62 @@
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
             // 
-            // btnBillingInformation
+            // txtRentPay
             // 
-            this.btnBillingInformation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnBillingInformation.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnBillingInformation.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBillingInformation.ForeColor = System.Drawing.Color.Gray;
-            this.btnBillingInformation.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnBillingInformation.Location = new System.Drawing.Point(0, 122);
-            this.btnBillingInformation.Name = "btnBillingInformation";
-            this.btnBillingInformation.Size = new System.Drawing.Size(208, 61);
-            this.btnBillingInformation.TabIndex = 7;
-            this.btnBillingInformation.Text = "Billing Information";
-            this.btnBillingInformation.UseVisualStyleBackColor = false;
+            this.txtRentPay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRentPay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRentPay.Location = new System.Drawing.Point(16, 64);
+            this.txtRentPay.Name = "txtRentPay";
+            this.txtRentPay.Size = new System.Drawing.Size(244, 27);
+            this.txtRentPay.TabIndex = 18;
             // 
-            // btnAnnouncements
+            // label2
             // 
-            this.btnAnnouncements.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnAnnouncements.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAnnouncements.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnnouncements.ForeColor = System.Drawing.Color.Gray;
-            this.btnAnnouncements.Location = new System.Drawing.Point(0, 183);
-            this.btnAnnouncements.Name = "btnAnnouncements";
-            this.btnAnnouncements.Size = new System.Drawing.Size(208, 61);
-            this.btnAnnouncements.TabIndex = 8;
-            this.btnAnnouncements.Text = "Announcements";
-            this.btnAnnouncements.UseVisualStyleBackColor = false;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(16, 41);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(82, 20);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "Rent Pay:";
+            // 
+            // txtUtilityPay
+            // 
+            this.txtUtilityPay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUtilityPay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUtilityPay.Location = new System.Drawing.Point(16, 125);
+            this.txtUtilityPay.Name = "txtUtilityPay";
+            this.txtUtilityPay.Size = new System.Drawing.Size(244, 27);
+            this.txtUtilityPay.TabIndex = 20;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(16, 102);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(89, 20);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Utility Pay:";
+            // 
+            // dtpPayDate
+            // 
+            this.dtpPayDate.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpPayDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpPayDate.Location = new System.Drawing.Point(16, 186);
+            this.dtpPayDate.Name = "dtpPayDate";
+            this.dtpPayDate.Size = new System.Drawing.Size(244, 27);
+            this.dtpPayDate.TabIndex = 23;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(16, 163);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(83, 20);
+            this.label4.TabIndex = 22;
+            this.label4.Text = "Pay Date:";
             // 
             // MemberDashboard
             // 
@@ -265,6 +335,8 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MemberDashboard_FormClosing);
             this.Load += new System.EventHandler(this.MemberDashboard_Load);
             this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMember)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
@@ -295,6 +367,12 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnAnnouncements;
         private System.Windows.Forms.Button btnBillingInformation;
+        private System.Windows.Forms.TextBox txtRentPay;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtUtilityPay;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DateTimePicker dtpPayDate;
+        private System.Windows.Forms.Label label4;
     }
 }
 
