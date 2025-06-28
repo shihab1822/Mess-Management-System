@@ -17,6 +17,9 @@ namespace Mess_Management_System
             InitializeComponent();
         }
 
+        HouseOwnerFlatsIncome hOFI = new HouseOwnerFlatsIncome(); 
+        HouseOwnerAnnounce hOA = new HouseOwnerAnnounce();
+
         private string _username;
         public HouseOwnerDashboard(string username) : this()
         {
@@ -30,6 +33,8 @@ namespace Mess_Management_System
                 this.Owner.Hide(); // Hide the parent form if it exists
             }
             lblWelUserName.Text = $"Welcome, {_username}";
+
+
         }
 
         private void HouseOwnerDashboard_FormClosing(object sender, FormClosingEventArgs e)
@@ -39,6 +44,33 @@ namespace Mess_Management_System
                 this.Owner.Show(); // Show the parent form if it exists
             }
 
+        }
+
+
+        private void btnRentedFlatsandIncome_Click(object sender, EventArgs e)
+        {
+
+            hOFI.TopLevel = false;
+            hOFI.AutoScroll = true;
+            hOFI.FormBorderStyle = FormBorderStyle.None;
+            hOFI.Dock = DockStyle.Fill;
+
+            this.panelHouseOwnerLoad.Controls.Clear();
+            this.panelHouseOwnerLoad.Controls.Add(hOFI);
+            hOFI.Show();
+        }
+
+        private void btnAnnouncements_Click(object sender, EventArgs e)
+        {
+
+            hOA.TopLevel = false;
+            hOA.AutoScroll = true;
+            hOA.FormBorderStyle = FormBorderStyle.None;
+            hOA.Dock = DockStyle.Fill;
+
+            this.panelHouseOwnerLoad.Controls.Clear();
+            this.panelHouseOwnerLoad.Controls.Add(hOA);
+            hOA.Show();
         }
     }
 }

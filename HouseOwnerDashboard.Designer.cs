@@ -30,10 +30,6 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblHouseOwnerView = new System.Windows.Forms.Label();
-            this.penalFlatsAndIncome = new System.Windows.Forms.Panel();
-            this.cmbFlatNo = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.dgvHouseOwner = new System.Windows.Forms.DataGridView();
             this.btnhome = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnAnnouncements = new System.Windows.Forms.Button();
@@ -46,13 +42,8 @@
             this.lblWelUserName = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btnSave = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtIncome = new System.Windows.Forms.TextBox();
-            this.lblnote = new System.Windows.Forms.Label();
-            this.richTextBoxnote = new System.Windows.Forms.RichTextBox();
+            this.panelHouseOwnerLoad = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            this.penalFlatsAndIncome.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvHouseOwner)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -79,53 +70,6 @@
             this.lblHouseOwnerView.Size = new System.Drawing.Size(266, 53);
             this.lblHouseOwnerView.TabIndex = 0;
             this.lblHouseOwnerView.Text = "House Owner";
-            // 
-            // penalFlatsAndIncome
-            // 
-            this.penalFlatsAndIncome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.penalFlatsAndIncome.Controls.Add(this.richTextBoxnote);
-            this.penalFlatsAndIncome.Controls.Add(this.lblnote);
-            this.penalFlatsAndIncome.Controls.Add(this.cmbFlatNo);
-            this.penalFlatsAndIncome.Controls.Add(this.label5);
-            this.penalFlatsAndIncome.Controls.Add(this.txtIncome);
-            this.penalFlatsAndIncome.Controls.Add(this.label2);
-            this.penalFlatsAndIncome.Location = new System.Drawing.Point(1091, 91);
-            this.penalFlatsAndIncome.Name = "penalFlatsAndIncome";
-            this.penalFlatsAndIncome.Size = new System.Drawing.Size(279, 588);
-            this.penalFlatsAndIncome.TabIndex = 15;
-            // 
-            // cmbFlatNo
-            // 
-            this.cmbFlatNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbFlatNo.FormattingEnabled = true;
-            this.cmbFlatNo.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3"});
-            this.cmbFlatNo.Location = new System.Drawing.Point(40, 64);
-            this.cmbFlatNo.Name = "cmbFlatNo";
-            this.cmbFlatNo.Size = new System.Drawing.Size(185, 28);
-            this.cmbFlatNo.TabIndex = 34;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(36, 41);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 20);
-            this.label5.TabIndex = 33;
-            this.label5.Text = "Flat No:";
-            // 
-            // dgvHouseOwner
-            // 
-            this.dgvHouseOwner.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvHouseOwner.Location = new System.Drawing.Point(228, 91);
-            this.dgvHouseOwner.Name = "dgvHouseOwner";
-            this.dgvHouseOwner.RowHeadersWidth = 51;
-            this.dgvHouseOwner.RowTemplate.Height = 24;
-            this.dgvHouseOwner.Size = new System.Drawing.Size(857, 588);
-            this.dgvHouseOwner.TabIndex = 16;
             // 
             // btnhome
             // 
@@ -165,6 +109,7 @@
             this.btnAnnouncements.TabIndex = 5;
             this.btnAnnouncements.Text = "Announcements";
             this.btnAnnouncements.UseVisualStyleBackColor = false;
+            this.btnAnnouncements.Click += new System.EventHandler(this.btnAnnouncements_Click);
             // 
             // btnRentedFlatsandIncome
             // 
@@ -179,6 +124,7 @@
             this.btnRentedFlatsandIncome.TabIndex = 2;
             this.btnRentedFlatsandIncome.Text = "Rented Flats and Income";
             this.btnRentedFlatsandIncome.UseVisualStyleBackColor = false;
+            this.btnRentedFlatsandIncome.Click += new System.EventHandler(this.btnRentedFlatsandIncome_Click);
             // 
             // panel5
             // 
@@ -265,54 +211,24 @@
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
             // 
-            // label2
+            // panelHouseOwnerLoad
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(40, 111);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 20);
-            this.label2.TabIndex = 27;
-            this.label2.Text = "Income:";
-            // 
-            // txtIncome
-            // 
-            this.txtIncome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtIncome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIncome.Location = new System.Drawing.Point(40, 134);
-            this.txtIncome.Name = "txtIncome";
-            this.txtIncome.Size = new System.Drawing.Size(184, 27);
-            this.txtIncome.TabIndex = 28;
-            // 
-            // lblnote
-            // 
-            this.lblnote.AutoSize = true;
-            this.lblnote.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblnote.Location = new System.Drawing.Point(40, 183);
-            this.lblnote.Name = "lblnote";
-            this.lblnote.Size = new System.Drawing.Size(49, 20);
-            this.lblnote.TabIndex = 35;
-            this.lblnote.Text = "Note:";
-            // 
-            // richTextBoxnote
-            // 
-            this.richTextBoxnote.Location = new System.Drawing.Point(44, 206);
-            this.richTextBoxnote.Name = "richTextBoxnote";
-            this.richTextBoxnote.Size = new System.Drawing.Size(181, 92);
-            this.richTextBoxnote.TabIndex = 37;
-            this.richTextBoxnote.Text = "";
+            this.panelHouseOwnerLoad.Location = new System.Drawing.Point(228, 92);
+            this.panelHouseOwnerLoad.Name = "panelHouseOwnerLoad";
+            this.panelHouseOwnerLoad.Size = new System.Drawing.Size(1141, 587);
+            this.panelHouseOwnerLoad.TabIndex = 23;
             // 
             // HouseOwnerDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1382, 753);
+            this.Controls.Add(this.panelHouseOwnerLoad);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.penalFlatsAndIncome);
-            this.Controls.Add(this.dgvHouseOwner);
             this.Controls.Add(this.panel2);
             this.Name = "HouseOwnerDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -321,9 +237,6 @@
             this.Load += new System.EventHandler(this.HouseOwnerDashboard_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.penalFlatsAndIncome.ResumeLayout(false);
-            this.penalFlatsAndIncome.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvHouseOwner)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
@@ -337,8 +250,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblHouseOwnerView;
-        private System.Windows.Forms.Panel penalFlatsAndIncome;
-        private System.Windows.Forms.DataGridView dgvHouseOwner;
         private System.Windows.Forms.Button btnhome;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnAnnouncements;
@@ -351,11 +262,6 @@
         private System.Windows.Forms.Label lblWelUserName;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.ComboBox cmbFlatNo;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label lblnote;
-        private System.Windows.Forms.TextBox txtIncome;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RichTextBox richTextBoxnote;
+        private System.Windows.Forms.Panel panelHouseOwnerLoad;
     }
 }

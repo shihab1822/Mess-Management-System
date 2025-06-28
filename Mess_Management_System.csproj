@@ -52,11 +52,23 @@
     <Compile Include="ChiefDashboard.Designer.cs">
       <DependentUpon>ChiefDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="HouseOwnerAnnounce.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HouseOwnerAnnounce.Designer.cs">
+      <DependentUpon>HouseOwnerAnnounce.cs</DependentUpon>
+    </Compile>
     <Compile Include="HouseOwnerDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="HouseOwnerDashboard.Designer.cs">
       <DependentUpon>HouseOwnerDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HouseOwnerFlatsIncome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HouseOwnerFlatsIncome.Designer.cs">
+      <DependentUpon>HouseOwnerFlatsIncome.cs</DependentUpon>
     </Compile>
     <Compile Include="ManagerDashboard.cs">
       <SubType>Form</SubType>
@@ -87,8 +99,14 @@
     <EmbeddedResource Include="ChiefDashboard.resx">
       <DependentUpon>ChiefDashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HouseOwnerAnnounce.resx">
+      <DependentUpon>HouseOwnerAnnounce.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HouseOwnerDashboard.resx">
       <DependentUpon>HouseOwnerDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HouseOwnerFlatsIncome.resx">
+      <DependentUpon>HouseOwnerFlatsIncome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManagerDashboard.resx">
       <DependentUpon>ManagerDashboard.cs</DependentUpon>
