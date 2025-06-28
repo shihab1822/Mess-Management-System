@@ -31,6 +31,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblHouseOwnerView = new System.Windows.Forms.Label();
             this.penalFlatsAndIncome = new System.Windows.Forms.Panel();
+            this.cmbFlatNo = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.dgvHouseOwner = new System.Windows.Forms.DataGridView();
             this.btnhome = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -44,12 +46,10 @@
             this.lblWelUserName = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btnSave = new System.Windows.Forms.Button();
-            this.cmbFlatNo = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.dtpJoiningDate = new System.Windows.Forms.DateTimePicker();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtIncome = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.txtIncome = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lblnote = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.penalFlatsAndIncome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHouseOwner)).BeginInit();
@@ -83,16 +83,39 @@
             // penalFlatsAndIncome
             // 
             this.penalFlatsAndIncome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.penalFlatsAndIncome.Controls.Add(this.textBox1);
+            this.penalFlatsAndIncome.Controls.Add(this.lblnote);
             this.penalFlatsAndIncome.Controls.Add(this.cmbFlatNo);
             this.penalFlatsAndIncome.Controls.Add(this.label5);
-            this.penalFlatsAndIncome.Controls.Add(this.dtpJoiningDate);
-            this.penalFlatsAndIncome.Controls.Add(this.label4);
             this.penalFlatsAndIncome.Controls.Add(this.txtIncome);
             this.penalFlatsAndIncome.Controls.Add(this.label2);
             this.penalFlatsAndIncome.Location = new System.Drawing.Point(1091, 91);
             this.penalFlatsAndIncome.Name = "penalFlatsAndIncome";
             this.penalFlatsAndIncome.Size = new System.Drawing.Size(279, 588);
             this.penalFlatsAndIncome.TabIndex = 15;
+            // 
+            // cmbFlatNo
+            // 
+            this.cmbFlatNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbFlatNo.FormattingEnabled = true;
+            this.cmbFlatNo.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3"});
+            this.cmbFlatNo.Location = new System.Drawing.Point(40, 64);
+            this.cmbFlatNo.Name = "cmbFlatNo";
+            this.cmbFlatNo.Size = new System.Drawing.Size(185, 28);
+            this.cmbFlatNo.TabIndex = 34;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(36, 41);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(68, 20);
+            this.label5.TabIndex = 33;
+            this.label5.Text = "Flat No:";
             // 
             // dgvHouseOwner
             // 
@@ -242,43 +265,15 @@
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
             // 
-            // cmbFlatNo
+            // label2
             // 
-            this.cmbFlatNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbFlatNo.FormattingEnabled = true;
-            this.cmbFlatNo.Location = new System.Drawing.Point(40, 64);
-            this.cmbFlatNo.Name = "cmbFlatNo";
-            this.cmbFlatNo.Size = new System.Drawing.Size(185, 28);
-            this.cmbFlatNo.TabIndex = 34;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(36, 41);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 20);
-            this.label5.TabIndex = 33;
-            this.label5.Text = "Flat No:";
-            // 
-            // dtpJoiningDate
-            // 
-            this.dtpJoiningDate.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpJoiningDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpJoiningDate.Location = new System.Drawing.Point(40, 326);
-            this.dtpJoiningDate.Name = "dtpJoiningDate";
-            this.dtpJoiningDate.Size = new System.Drawing.Size(189, 27);
-            this.dtpJoiningDate.TabIndex = 31;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(40, 295);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(108, 20);
-            this.label4.TabIndex = 30;
-            this.label4.Text = "Joining Date:";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(40, 111);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(68, 20);
+            this.label2.TabIndex = 27;
+            this.label2.Text = "Income:";
             // 
             // txtIncome
             // 
@@ -289,15 +284,24 @@
             this.txtIncome.Size = new System.Drawing.Size(184, 27);
             this.txtIncome.TabIndex = 28;
             // 
-            // label2
+            // textBox1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(40, 111);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 20);
-            this.label2.TabIndex = 27;
-            this.label2.Text = "Income:";
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(40, 206);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(184, 41);
+            this.textBox1.TabIndex = 36;
+            // 
+            // lblnote
+            // 
+            this.lblnote.AutoSize = true;
+            this.lblnote.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblnote.Location = new System.Drawing.Point(40, 183);
+            this.lblnote.Name = "lblnote";
+            this.lblnote.Size = new System.Drawing.Size(49, 20);
+            this.lblnote.TabIndex = 35;
+            this.lblnote.Text = "Note:";
             // 
             // HouseOwnerDashboard
             // 
@@ -350,8 +354,8 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.ComboBox cmbFlatNo;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DateTimePicker dtpJoiningDate;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label lblnote;
         private System.Windows.Forms.TextBox txtIncome;
         private System.Windows.Forms.Label label2;
     }
