@@ -17,6 +17,9 @@ namespace Mess_Management_System
             InitializeComponent();
         }
 
+        ChiefAnnounce chA = new ChiefAnnounce();
+        ChiefMealData chMD = new ChiefMealData();
+
         private string _username;
         public ChiefDashboard(string username) : this()
         {
@@ -37,6 +40,31 @@ namespace Mess_Management_System
             {
                 this.Owner.Show(); // Hide the parent form if it exists
             }
+        }
+
+        private void btnMealData_Click(object sender, EventArgs e)
+        {
+            chMD.TopLevel = false;
+            chMD.AutoScroll = true;
+            chMD.FormBorderStyle = FormBorderStyle.None;
+            chMD.Dock = DockStyle.Fill;
+
+            this.panelChiefLoad.Controls.Clear();
+            this.panelChiefLoad.Controls.Add(chMD);
+            chMD.Show();
+        }
+
+        private void btnAnnouncements_Click(object sender, EventArgs e)
+        {
+            chA.TopLevel = false;
+            chA.AutoScroll = true;
+            chA.FormBorderStyle = FormBorderStyle.None;
+            chA.Dock = DockStyle.Fill;
+
+            this.panelChiefLoad.Controls.Clear();
+            this.panelChiefLoad.Controls.Add(chA);
+            chA.Show();
+
         }
     }
 }
