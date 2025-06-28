@@ -49,7 +49,7 @@ namespace Mess_Management_System
                                 case "Member":
                                     new MemberDashboard(username).Show(this);
                                     break;
-                                case "HouseOwner":
+                                case "House Owner":
                                     new HouseOwnerDashboard(username).Show(this);
                                     break;
                                 case "Chief":

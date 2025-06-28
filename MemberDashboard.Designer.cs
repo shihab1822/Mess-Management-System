@@ -30,23 +30,21 @@
         {
             this.btnhome = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnActiveMonthDetails = new System.Windows.Forms.Button();
-            this.btnCommunicationwithHouseOwner = new System.Windows.Forms.Button();
-            this.btnAssignedFlatandRoommates = new System.Windows.Forms.Button();
-            this.btnBillsandPayments = new System.Windows.Forms.Button();
-            this.btnRentaFlat = new System.Windows.Forms.Button();
+            this.btnPayments = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dgvMember = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblWelUserName = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.lblHouseOwnerView = new System.Windows.Forms.Label();
-            this.lblWelUserName = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btnSave = new System.Windows.Forms.Button();
+            this.btnBillingInformation = new System.Windows.Forms.Button();
+            this.btnAnnouncements = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMember)).BeginInit();
             this.panel4.SuspendLayout();
@@ -68,90 +66,35 @@
             this.btnhome.TabIndex = 0;
             this.btnhome.Text = "Home";
             this.btnhome.UseVisualStyleBackColor = false;
+            this.btnhome.Click += new System.EventHandler(this.btnhome_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Cornsilk;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.btnActiveMonthDetails);
-            this.panel2.Controls.Add(this.btnCommunicationwithHouseOwner);
-            this.panel2.Controls.Add(this.btnAssignedFlatandRoommates);
-            this.panel2.Controls.Add(this.btnBillsandPayments);
-            this.panel2.Controls.Add(this.btnRentaFlat);
+            this.panel2.Controls.Add(this.btnAnnouncements);
+            this.panel2.Controls.Add(this.btnBillingInformation);
+            this.panel2.Controls.Add(this.btnPayments);
             this.panel2.Controls.Add(this.btnhome);
             this.panel2.Location = new System.Drawing.Point(12, 91);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(210, 646);
             this.panel2.TabIndex = 2;
             // 
-            // btnActiveMonthDetails
+            // btnPayments
             // 
-            this.btnActiveMonthDetails.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnActiveMonthDetails.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnActiveMonthDetails.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActiveMonthDetails.ForeColor = System.Drawing.Color.Gray;
-            this.btnActiveMonthDetails.Location = new System.Drawing.Point(0, 305);
-            this.btnActiveMonthDetails.Name = "btnActiveMonthDetails";
-            this.btnActiveMonthDetails.Size = new System.Drawing.Size(208, 61);
-            this.btnActiveMonthDetails.TabIndex = 5;
-            this.btnActiveMonthDetails.Text = "Active Month Details";
-            this.btnActiveMonthDetails.UseVisualStyleBackColor = false;
-            // 
-            // btnCommunicationwithHouseOwner
-            // 
-            this.btnCommunicationwithHouseOwner.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnCommunicationwithHouseOwner.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCommunicationwithHouseOwner.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCommunicationwithHouseOwner.ForeColor = System.Drawing.Color.Gray;
-            this.btnCommunicationwithHouseOwner.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnCommunicationwithHouseOwner.Location = new System.Drawing.Point(0, 244);
-            this.btnCommunicationwithHouseOwner.Name = "btnCommunicationwithHouseOwner";
-            this.btnCommunicationwithHouseOwner.Size = new System.Drawing.Size(208, 61);
-            this.btnCommunicationwithHouseOwner.TabIndex = 4;
-            this.btnCommunicationwithHouseOwner.Text = "Communication with House Owner";
-            this.btnCommunicationwithHouseOwner.UseVisualStyleBackColor = false;
-            // 
-            // btnAssignedFlatandRoommates
-            // 
-            this.btnAssignedFlatandRoommates.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnAssignedFlatandRoommates.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAssignedFlatandRoommates.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAssignedFlatandRoommates.ForeColor = System.Drawing.Color.Gray;
-            this.btnAssignedFlatandRoommates.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnAssignedFlatandRoommates.Location = new System.Drawing.Point(0, 183);
-            this.btnAssignedFlatandRoommates.Name = "btnAssignedFlatandRoommates";
-            this.btnAssignedFlatandRoommates.Size = new System.Drawing.Size(208, 61);
-            this.btnAssignedFlatandRoommates.TabIndex = 3;
-            this.btnAssignedFlatandRoommates.Text = "Assigned Flat and Roommates";
-            this.btnAssignedFlatandRoommates.UseVisualStyleBackColor = false;
-            // 
-            // btnBillsandPayments
-            // 
-            this.btnBillsandPayments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnBillsandPayments.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnBillsandPayments.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBillsandPayments.ForeColor = System.Drawing.Color.Gray;
-            this.btnBillsandPayments.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnBillsandPayments.Location = new System.Drawing.Point(0, 122);
-            this.btnBillsandPayments.Name = "btnBillsandPayments";
-            this.btnBillsandPayments.Size = new System.Drawing.Size(208, 61);
-            this.btnBillsandPayments.TabIndex = 2;
-            this.btnBillsandPayments.Text = "Bills and Payments";
-            this.btnBillsandPayments.UseVisualStyleBackColor = false;
-            // 
-            // btnRentaFlat
-            // 
-            this.btnRentaFlat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnRentaFlat.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnRentaFlat.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRentaFlat.ForeColor = System.Drawing.Color.Gray;
-            this.btnRentaFlat.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnRentaFlat.Location = new System.Drawing.Point(0, 61);
-            this.btnRentaFlat.Name = "btnRentaFlat";
-            this.btnRentaFlat.Size = new System.Drawing.Size(208, 61);
-            this.btnRentaFlat.TabIndex = 1;
-            this.btnRentaFlat.Text = "Rent a Flat";
-            this.btnRentaFlat.UseVisualStyleBackColor = false;
+            this.btnPayments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnPayments.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPayments.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPayments.ForeColor = System.Drawing.Color.Gray;
+            this.btnPayments.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnPayments.Location = new System.Drawing.Point(0, 61);
+            this.btnPayments.Name = "btnPayments";
+            this.btnPayments.Size = new System.Drawing.Size(208, 61);
+            this.btnPayments.TabIndex = 2;
+            this.btnPayments.Text = "Payments";
+            this.btnPayments.UseVisualStyleBackColor = false;
+            this.btnPayments.Click += new System.EventHandler(this.btnBillsandPayments_Click);
             // 
             // panel3
             // 
@@ -193,17 +136,6 @@
             this.button1.Text = "Delete";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Yellow;
-            this.button2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(359, 5);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(146, 39);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Update";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.LightGreen;
@@ -215,6 +147,17 @@
             this.button3.Text = "Create";
             this.button3.UseVisualStyleBackColor = false;
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Yellow;
+            this.button2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(359, 5);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(146, 39);
+            this.button2.TabIndex = 12;
+            this.button2.Text = "Update";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -223,6 +166,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(991, 59);
             this.panel1.TabIndex = 22;
+            // 
+            // lblWelUserName
+            // 
+            this.lblWelUserName.AutoSize = true;
+            this.lblWelUserName.Font = new System.Drawing.Font("Calibri", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWelUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.lblWelUserName.Location = new System.Drawing.Point(294, 2);
+            this.lblWelUserName.Name = "lblWelUserName";
+            this.lblWelUserName.Size = new System.Drawing.Size(400, 53);
+            this.lblWelUserName.TabIndex = 2;
+            this.lblWelUserName.Text = "Welcome, UserName";
             // 
             // panel5
             // 
@@ -245,17 +199,6 @@
             this.lblHouseOwnerView.TabIndex = 0;
             this.lblHouseOwnerView.Text = "Member";
             // 
-            // lblWelUserName
-            // 
-            this.lblWelUserName.AutoSize = true;
-            this.lblWelUserName.Font = new System.Drawing.Font("Calibri", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWelUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.lblWelUserName.Location = new System.Drawing.Point(294, 2);
-            this.lblWelUserName.Name = "lblWelUserName";
-            this.lblWelUserName.Size = new System.Drawing.Size(400, 53);
-            this.lblWelUserName.TabIndex = 2;
-            this.lblWelUserName.Text = "Welcome, UserName";
-            // 
             // panel6
             // 
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -276,6 +219,33 @@
             this.btnSave.TabIndex = 12;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
+            // 
+            // btnBillingInformation
+            // 
+            this.btnBillingInformation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnBillingInformation.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBillingInformation.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBillingInformation.ForeColor = System.Drawing.Color.Gray;
+            this.btnBillingInformation.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnBillingInformation.Location = new System.Drawing.Point(0, 122);
+            this.btnBillingInformation.Name = "btnBillingInformation";
+            this.btnBillingInformation.Size = new System.Drawing.Size(208, 61);
+            this.btnBillingInformation.TabIndex = 7;
+            this.btnBillingInformation.Text = "Billing Information";
+            this.btnBillingInformation.UseVisualStyleBackColor = false;
+            // 
+            // btnAnnouncements
+            // 
+            this.btnAnnouncements.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnAnnouncements.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAnnouncements.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnnouncements.ForeColor = System.Drawing.Color.Gray;
+            this.btnAnnouncements.Location = new System.Drawing.Point(0, 183);
+            this.btnAnnouncements.Name = "btnAnnouncements";
+            this.btnAnnouncements.Size = new System.Drawing.Size(208, 61);
+            this.btnAnnouncements.TabIndex = 8;
+            this.btnAnnouncements.Text = "Announcements";
+            this.btnAnnouncements.UseVisualStyleBackColor = false;
             // 
             // MemberDashboard
             // 
@@ -312,11 +282,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.DataGridView dgvMember;
-        private System.Windows.Forms.Button btnActiveMonthDetails;
-        private System.Windows.Forms.Button btnCommunicationwithHouseOwner;
-        private System.Windows.Forms.Button btnAssignedFlatandRoommates;
-        private System.Windows.Forms.Button btnBillsandPayments;
-        private System.Windows.Forms.Button btnRentaFlat;
+        private System.Windows.Forms.Button btnPayments;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
@@ -327,6 +293,8 @@
         private System.Windows.Forms.Label lblWelUserName;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnAnnouncements;
+        private System.Windows.Forms.Button btnBillingInformation;
     }
 }
 

@@ -63,7 +63,7 @@ namespace Mess_Management_System
         {
 
 
-            string query = "SELECT * FROM Members";
+            string query = "SELECT MemberID, Name, IsManager, JoiningDate FROM Members";
             using (SqlDataAdapter adapter = new SqlDataAdapter(query, conn))
             {
                 DataTable dt = new DataTable();

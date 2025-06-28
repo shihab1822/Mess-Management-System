@@ -43,5 +43,35 @@ namespace Mess_Management_System
         {
 
         }
+
+        private void btnhome_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRentaFlat_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBillsandPayments_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAssignedFlatandRoommates_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCommunicationwithHouseOwner_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnActiveMonthDetails_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

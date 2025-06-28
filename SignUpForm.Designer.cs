@@ -45,7 +45,7 @@
             this.cmbRole.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbRole.FormattingEnabled = true;
             this.cmbRole.Items.AddRange(new object[] {
-            "Memeber",
+            "Member",
             "Manager",
             "House Owner",
             "Chief"});

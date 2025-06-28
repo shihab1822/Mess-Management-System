@@ -30,14 +30,12 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblHouseOwnerView = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.penalFlatsAndIncome = new System.Windows.Forms.Panel();
             this.dgvHouseOwner = new System.Windows.Forms.DataGridView();
             this.btnhome = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnAnnouncements = new System.Windows.Forms.Button();
-            this.btnCommunicationwithMembers = new System.Windows.Forms.Button();
             this.btnRentedFlatsandIncome = new System.Windows.Forms.Button();
-            this.btnAdvertiseFlats = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -46,7 +44,14 @@
             this.lblWelUserName = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btnSave = new System.Windows.Forms.Button();
+            this.cmbFlatNo = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.dtpJoiningDate = new System.Windows.Forms.DateTimePicker();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtIncome = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.penalFlatsAndIncome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHouseOwner)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -75,13 +80,19 @@
             this.lblHouseOwnerView.TabIndex = 0;
             this.lblHouseOwnerView.Text = "House Owner";
             // 
-            // panel3
+            // penalFlatsAndIncome
             // 
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Location = new System.Drawing.Point(1091, 91);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(279, 588);
-            this.panel3.TabIndex = 15;
+            this.penalFlatsAndIncome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.penalFlatsAndIncome.Controls.Add(this.cmbFlatNo);
+            this.penalFlatsAndIncome.Controls.Add(this.label5);
+            this.penalFlatsAndIncome.Controls.Add(this.dtpJoiningDate);
+            this.penalFlatsAndIncome.Controls.Add(this.label4);
+            this.penalFlatsAndIncome.Controls.Add(this.txtIncome);
+            this.penalFlatsAndIncome.Controls.Add(this.label2);
+            this.penalFlatsAndIncome.Location = new System.Drawing.Point(1091, 91);
+            this.penalFlatsAndIncome.Name = "penalFlatsAndIncome";
+            this.penalFlatsAndIncome.Size = new System.Drawing.Size(279, 588);
+            this.penalFlatsAndIncome.TabIndex = 15;
             // 
             // dgvHouseOwner
             // 
@@ -112,9 +123,7 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.btnAnnouncements);
-            this.panel2.Controls.Add(this.btnCommunicationwithMembers);
             this.panel2.Controls.Add(this.btnRentedFlatsandIncome);
-            this.panel2.Controls.Add(this.btnAdvertiseFlats);
             this.panel2.Controls.Add(this.btnhome);
             this.panel2.Location = new System.Drawing.Point(12, 91);
             this.panel2.Name = "panel2";
@@ -127,26 +136,12 @@
             this.btnAnnouncements.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnAnnouncements.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAnnouncements.ForeColor = System.Drawing.Color.Gray;
-            this.btnAnnouncements.Location = new System.Drawing.Point(0, 244);
+            this.btnAnnouncements.Location = new System.Drawing.Point(0, 122);
             this.btnAnnouncements.Name = "btnAnnouncements";
             this.btnAnnouncements.Size = new System.Drawing.Size(208, 61);
             this.btnAnnouncements.TabIndex = 5;
             this.btnAnnouncements.Text = "Announcements";
             this.btnAnnouncements.UseVisualStyleBackColor = false;
-            // 
-            // btnCommunicationwithMembers
-            // 
-            this.btnCommunicationwithMembers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnCommunicationwithMembers.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCommunicationwithMembers.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCommunicationwithMembers.ForeColor = System.Drawing.Color.Gray;
-            this.btnCommunicationwithMembers.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnCommunicationwithMembers.Location = new System.Drawing.Point(0, 183);
-            this.btnCommunicationwithMembers.Name = "btnCommunicationwithMembers";
-            this.btnCommunicationwithMembers.Size = new System.Drawing.Size(208, 61);
-            this.btnCommunicationwithMembers.TabIndex = 3;
-            this.btnCommunicationwithMembers.Text = "Communication with Members";
-            this.btnCommunicationwithMembers.UseVisualStyleBackColor = false;
             // 
             // btnRentedFlatsandIncome
             // 
@@ -155,26 +150,12 @@
             this.btnRentedFlatsandIncome.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRentedFlatsandIncome.ForeColor = System.Drawing.Color.Gray;
             this.btnRentedFlatsandIncome.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnRentedFlatsandIncome.Location = new System.Drawing.Point(0, 122);
+            this.btnRentedFlatsandIncome.Location = new System.Drawing.Point(0, 61);
             this.btnRentedFlatsandIncome.Name = "btnRentedFlatsandIncome";
             this.btnRentedFlatsandIncome.Size = new System.Drawing.Size(208, 61);
             this.btnRentedFlatsandIncome.TabIndex = 2;
             this.btnRentedFlatsandIncome.Text = "Rented Flats and Income";
             this.btnRentedFlatsandIncome.UseVisualStyleBackColor = false;
-            // 
-            // btnAdvertiseFlats
-            // 
-            this.btnAdvertiseFlats.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnAdvertiseFlats.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAdvertiseFlats.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdvertiseFlats.ForeColor = System.Drawing.Color.Gray;
-            this.btnAdvertiseFlats.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnAdvertiseFlats.Location = new System.Drawing.Point(0, 61);
-            this.btnAdvertiseFlats.Name = "btnAdvertiseFlats";
-            this.btnAdvertiseFlats.Size = new System.Drawing.Size(208, 61);
-            this.btnAdvertiseFlats.TabIndex = 1;
-            this.btnAdvertiseFlats.Text = "Advertise Flats";
-            this.btnAdvertiseFlats.UseVisualStyleBackColor = false;
             // 
             // panel5
             // 
@@ -261,6 +242,63 @@
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
             // 
+            // cmbFlatNo
+            // 
+            this.cmbFlatNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbFlatNo.FormattingEnabled = true;
+            this.cmbFlatNo.Location = new System.Drawing.Point(40, 64);
+            this.cmbFlatNo.Name = "cmbFlatNo";
+            this.cmbFlatNo.Size = new System.Drawing.Size(185, 28);
+            this.cmbFlatNo.TabIndex = 34;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(36, 41);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(68, 20);
+            this.label5.TabIndex = 33;
+            this.label5.Text = "Flat No:";
+            // 
+            // dtpJoiningDate
+            // 
+            this.dtpJoiningDate.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpJoiningDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpJoiningDate.Location = new System.Drawing.Point(40, 326);
+            this.dtpJoiningDate.Name = "dtpJoiningDate";
+            this.dtpJoiningDate.Size = new System.Drawing.Size(189, 27);
+            this.dtpJoiningDate.TabIndex = 31;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(40, 295);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(108, 20);
+            this.label4.TabIndex = 30;
+            this.label4.Text = "Joining Date:";
+            // 
+            // txtIncome
+            // 
+            this.txtIncome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtIncome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIncome.Location = new System.Drawing.Point(40, 134);
+            this.txtIncome.Name = "txtIncome";
+            this.txtIncome.Size = new System.Drawing.Size(184, 27);
+            this.txtIncome.TabIndex = 28;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(40, 111);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(68, 20);
+            this.label2.TabIndex = 27;
+            this.label2.Text = "Income:";
+            // 
             // HouseOwnerDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -270,7 +308,7 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.penalFlatsAndIncome);
             this.Controls.Add(this.dgvHouseOwner);
             this.Controls.Add(this.panel2);
             this.Name = "HouseOwnerDashboard";
@@ -280,6 +318,8 @@
             this.Load += new System.EventHandler(this.HouseOwnerDashboard_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.penalFlatsAndIncome.ResumeLayout(false);
+            this.penalFlatsAndIncome.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHouseOwner)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
@@ -294,14 +334,12 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblHouseOwnerView;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel penalFlatsAndIncome;
         private System.Windows.Forms.DataGridView dgvHouseOwner;
         private System.Windows.Forms.Button btnhome;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnAnnouncements;
-        private System.Windows.Forms.Button btnCommunicationwithMembers;
         private System.Windows.Forms.Button btnRentedFlatsandIncome;
-        private System.Windows.Forms.Button btnAdvertiseFlats;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
@@ -310,5 +348,11 @@
         private System.Windows.Forms.Label lblWelUserName;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.ComboBox cmbFlatNo;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DateTimePicker dtpJoiningDate;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtIncome;
+        private System.Windows.Forms.Label label2;
     }
 }
