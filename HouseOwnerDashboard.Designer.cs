@@ -49,7 +49,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtIncome = new System.Windows.Forms.TextBox();
             this.lblnote = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.richTextBoxnote = new System.Windows.Forms.RichTextBox();
             this.panel1.SuspendLayout();
             this.penalFlatsAndIncome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHouseOwner)).BeginInit();
@@ -83,7 +83,7 @@
             // penalFlatsAndIncome
             // 
             this.penalFlatsAndIncome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.penalFlatsAndIncome.Controls.Add(this.richTextBox1);
+            this.penalFlatsAndIncome.Controls.Add(this.richTextBoxnote);
             this.penalFlatsAndIncome.Controls.Add(this.lblnote);
             this.penalFlatsAndIncome.Controls.Add(this.cmbFlatNo);
             this.penalFlatsAndIncome.Controls.Add(this.label5);
@@ -294,13 +294,13 @@
             this.lblnote.TabIndex = 35;
             this.lblnote.Text = "Note:";
             // 
-            // richTextBox1
+            // richTextBoxnote
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(44, 206);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(181, 92);
-            this.richTextBox1.TabIndex = 37;
-            this.richTextBox1.Text = "";
+            this.richTextBoxnote.Location = new System.Drawing.Point(44, 206);
+            this.richTextBoxnote.Name = "richTextBoxnote";
+            this.richTextBoxnote.Size = new System.Drawing.Size(181, 92);
+            this.richTextBoxnote.TabIndex = 37;
+            this.richTextBoxnote.Text = "";
             // 
             // HouseOwnerDashboard
             // 
@@ -356,6 +356,6 @@
         private System.Windows.Forms.Label lblnote;
         private System.Windows.Forms.TextBox txtIncome;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox richTextBoxnote;
     }
 }
