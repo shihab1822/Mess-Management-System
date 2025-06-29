@@ -34,6 +34,12 @@
             this.btnBillingInformation = new System.Windows.Forms.Button();
             this.btnPayments = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.dtpPayDate = new System.Windows.Forms.DateTimePicker();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtUtilityPay = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtRentPay = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.dgvMember = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
@@ -45,12 +51,6 @@
             this.lblHouseOwnerView = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btnSave = new System.Windows.Forms.Button();
-            this.txtRentPay = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtUtilityPay = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.dtpPayDate = new System.Windows.Forms.DateTimePicker();
-            this.label4 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMember)).BeginInit();
@@ -143,6 +143,64 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(279, 587);
             this.panel3.TabIndex = 3;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // dtpPayDate
+            // 
+            this.dtpPayDate.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpPayDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpPayDate.Location = new System.Drawing.Point(16, 186);
+            this.dtpPayDate.Name = "dtpPayDate";
+            this.dtpPayDate.Size = new System.Drawing.Size(244, 27);
+            this.dtpPayDate.TabIndex = 23;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(16, 163);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(83, 20);
+            this.label4.TabIndex = 22;
+            this.label4.Text = "Pay Date:";
+            // 
+            // txtUtilityPay
+            // 
+            this.txtUtilityPay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUtilityPay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUtilityPay.Location = new System.Drawing.Point(16, 125);
+            this.txtUtilityPay.Name = "txtUtilityPay";
+            this.txtUtilityPay.Size = new System.Drawing.Size(244, 27);
+            this.txtUtilityPay.TabIndex = 20;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(16, 102);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(89, 20);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Utility Pay:";
+            // 
+            // txtRentPay
+            // 
+            this.txtRentPay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRentPay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRentPay.Location = new System.Drawing.Point(16, 64);
+            this.txtRentPay.Name = "txtRentPay";
+            this.txtRentPay.Size = new System.Drawing.Size(244, 27);
+            this.txtRentPay.TabIndex = 18;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(16, 41);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(82, 20);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "Rent Pay:";
             // 
             // dgvMember
             // 
@@ -259,63 +317,6 @@
             this.btnSave.TabIndex = 12;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
-            // 
-            // txtRentPay
-            // 
-            this.txtRentPay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtRentPay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRentPay.Location = new System.Drawing.Point(16, 64);
-            this.txtRentPay.Name = "txtRentPay";
-            this.txtRentPay.Size = new System.Drawing.Size(244, 27);
-            this.txtRentPay.TabIndex = 18;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(16, 41);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 20);
-            this.label2.TabIndex = 17;
-            this.label2.Text = "Rent Pay:";
-            // 
-            // txtUtilityPay
-            // 
-            this.txtUtilityPay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtUtilityPay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUtilityPay.Location = new System.Drawing.Point(16, 125);
-            this.txtUtilityPay.Name = "txtUtilityPay";
-            this.txtUtilityPay.Size = new System.Drawing.Size(244, 27);
-            this.txtUtilityPay.TabIndex = 20;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(16, 102);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 20);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "Utility Pay:";
-            // 
-            // dtpPayDate
-            // 
-            this.dtpPayDate.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpPayDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpPayDate.Location = new System.Drawing.Point(16, 186);
-            this.dtpPayDate.Name = "dtpPayDate";
-            this.dtpPayDate.Size = new System.Drawing.Size(244, 27);
-            this.dtpPayDate.TabIndex = 23;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(16, 163);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(83, 20);
-            this.label4.TabIndex = 22;
-            this.label4.Text = "Pay Date:";
             // 
             // MemberDashboard
             // 
