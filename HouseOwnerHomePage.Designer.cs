@@ -146,7 +146,7 @@
             // 
             // rtxtIncomeSummary
             // 
-            this.rtxtIncomeSummary.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rtxtIncomeSummary.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rtxtIncomeSummary.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rtxtIncomeSummary.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtxtIncomeSummary.Location = new System.Drawing.Point(0, 0);
@@ -158,7 +158,7 @@
             // 
             // txtAnnounce
             // 
-            this.txtAnnounce.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtAnnounce.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtAnnounce.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtAnnounce.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAnnounce.Location = new System.Drawing.Point(0, 0);
