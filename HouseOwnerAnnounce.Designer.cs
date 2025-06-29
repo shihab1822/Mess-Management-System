@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.dgvHouseOwner = new System.Windows.Forms.DataGridView();
             this.penalFlatsAndIncome = new System.Windows.Forms.Panel();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.dgvHouseOwner = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvHouseOwner)).BeginInit();
             this.penalFlatsAndIncome.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHouseOwner)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -48,22 +48,11 @@
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 47F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1123, 540);
             this.tableLayoutPanel1.TabIndex = 0;
-            // 
-            // dgvHouseOwner
-            // 
-            this.dgvHouseOwner.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvHouseOwner.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvHouseOwner.Location = new System.Drawing.Point(3, 3);
-            this.dgvHouseOwner.Name = "dgvHouseOwner";
-            this.dgvHouseOwner.RowHeadersWidth = 51;
-            this.dgvHouseOwner.RowTemplate.Height = 24;
-            this.dgvHouseOwner.Size = new System.Drawing.Size(774, 534);
-            this.dgvHouseOwner.TabIndex = 39;
             // 
             // penalFlatsAndIncome
             // 
@@ -73,7 +62,7 @@
             this.penalFlatsAndIncome.Dock = System.Windows.Forms.DockStyle.Fill;
             this.penalFlatsAndIncome.Location = new System.Drawing.Point(783, 3);
             this.penalFlatsAndIncome.Name = "penalFlatsAndIncome";
-            this.penalFlatsAndIncome.Size = new System.Drawing.Size(337, 534);
+            this.penalFlatsAndIncome.Size = new System.Drawing.Size(337, 487);
             this.penalFlatsAndIncome.TabIndex = 40;
             // 
             // richTextBox1
@@ -95,6 +84,17 @@
             this.label1.TabIndex = 38;
             this.label1.Text = "Message:";
             // 
+            // dgvHouseOwner
+            // 
+            this.dgvHouseOwner.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvHouseOwner.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvHouseOwner.Location = new System.Drawing.Point(3, 3);
+            this.dgvHouseOwner.Name = "dgvHouseOwner";
+            this.dgvHouseOwner.RowHeadersWidth = 51;
+            this.dgvHouseOwner.RowTemplate.Height = 24;
+            this.dgvHouseOwner.Size = new System.Drawing.Size(774, 487);
+            this.dgvHouseOwner.TabIndex = 39;
+            // 
             // HouseOwnerAnnounce
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -104,9 +104,9 @@
             this.Name = "HouseOwnerAnnounce";
             this.Text = "HouseOwnerAnnounce";
             this.tableLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvHouseOwner)).EndInit();
             this.penalFlatsAndIncome.ResumeLayout(false);
             this.penalFlatsAndIncome.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHouseOwner)).EndInit();
             this.ResumeLayout(false);
 
         }
