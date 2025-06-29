@@ -21,11 +21,9 @@ namespace Mess_Management_System
             _houseOwnerId = houseOwnerId;
         }
 
-
-        SqlConnection con = new SqlConnection("Data Source=hp;Initial Catalog=\"Mess Management System\";Integrated Security=True;TrustServerCertificate=True");
         private void HouseOwnerFlatsIncome_Load(object sender, EventArgs e)
         {
-            LoadFlatsData();
+            //LoadFlatsData();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -45,6 +43,8 @@ namespace Mess_Management_System
                 MessageBox.Show("Please enter a valid rent amount.");
                 return;
             }
+
+            SqlConnection con = new SqlConnection("Data Source=hp;Initial Catalog=\"Mess Management System\";Integrated Security=True;TrustServerCertificate=True");
 
             try
             {
@@ -76,6 +76,8 @@ namespace Mess_Management_System
 
         private void LoadFlatsData()
         {
+
+            SqlConnection con = new SqlConnection("Data Source=hp;Initial Catalog=\"Mess Management System\";Integrated Security=True;TrustServerCertificate=True");
             try
             {
                 con.Open();

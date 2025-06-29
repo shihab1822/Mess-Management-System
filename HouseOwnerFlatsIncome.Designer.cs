@@ -37,14 +37,12 @@
             this.txtRent = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.btnLoad = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.txtHouseOwner = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtFlatAddress = new System.Windows.Forms.TextBox();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.txtFlatAddress = new System.Windows.Forms.RichTextBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHouseOwner)).BeginInit();
             this.panelAnnouncements.SuspendLayout();
@@ -89,8 +87,6 @@
             // 
             this.panelAnnouncements.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelAnnouncements.Controls.Add(this.txtFlatAddress);
-            this.panelAnnouncements.Controls.Add(this.txtHouseOwner);
-            this.panelAnnouncements.Controls.Add(this.label1);
             this.panelAnnouncements.Controls.Add(this.rtxtDescription);
             this.panelAnnouncements.Controls.Add(this.lblnote);
             this.panelAnnouncements.Controls.Add(this.label5);
@@ -104,7 +100,8 @@
             // 
             // rtxtDescription
             // 
-            this.rtxtDescription.Location = new System.Drawing.Point(23, 196);
+            this.rtxtDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtxtDescription.Location = new System.Drawing.Point(23, 227);
             this.rtxtDescription.Name = "rtxtDescription";
             this.rtxtDescription.Size = new System.Drawing.Size(298, 92);
             this.rtxtDescription.TabIndex = 43;
@@ -114,7 +111,7 @@
             // 
             this.lblnote.AutoSize = true;
             this.lblnote.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblnote.Location = new System.Drawing.Point(23, 173);
+            this.lblnote.Location = new System.Drawing.Point(23, 204);
             this.lblnote.Name = "lblnote";
             this.lblnote.Size = new System.Drawing.Size(100, 20);
             this.lblnote.TabIndex = 42;
@@ -134,7 +131,7 @@
             // 
             this.txtRent.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtRent.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRent.Location = new System.Drawing.Point(23, 124);
+            this.txtRent.Location = new System.Drawing.Point(23, 155);
             this.txtRent.Name = "txtRent";
             this.txtRent.Size = new System.Drawing.Size(298, 27);
             this.txtRent.TabIndex = 39;
@@ -143,7 +140,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(23, 101);
+            this.label2.Location = new System.Drawing.Point(23, 132);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 20);
             this.label2.TabIndex = 38;
@@ -161,42 +158,6 @@
             this.panel1.Size = new System.Drawing.Size(773, 41);
             this.panel1.TabIndex = 41;
             // 
-            // btnSave
-            // 
-            this.btnSave.BackColor = System.Drawing.Color.Orange;
-            this.btnSave.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnSave.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(0, 0);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(336, 39);
-            this.btnSave.TabIndex = 42;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Tomato;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(625, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(146, 39);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Delete";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Yellow;
-            this.button2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(313, 1);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(146, 39);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Update";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
             // btnLoad
             // 
             this.btnLoad.BackColor = System.Drawing.Color.LightGreen;
@@ -210,6 +171,29 @@
             this.btnLoad.UseVisualStyleBackColor = false;
             this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Yellow;
+            this.button2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(313, 1);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(146, 39);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "Update";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Tomato;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(625, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(146, 39);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Delete";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -220,33 +204,27 @@
             this.panel2.Size = new System.Drawing.Size(338, 41);
             this.panel2.TabIndex = 42;
             // 
-            // txtHouseOwner
+            // btnSave
             // 
-            this.txtHouseOwner.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtHouseOwner.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHouseOwner.Location = new System.Drawing.Point(23, 334);
-            this.txtHouseOwner.Name = "txtHouseOwner";
-            this.txtHouseOwner.Size = new System.Drawing.Size(298, 27);
-            this.txtHouseOwner.TabIndex = 45;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(23, 311);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 20);
-            this.label1.TabIndex = 44;
-            this.label1.Text = "House Owner:";
+            this.btnSave.BackColor = System.Drawing.Color.Orange;
+            this.btnSave.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnSave.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Location = new System.Drawing.Point(0, 0);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(336, 39);
+            this.btnSave.TabIndex = 42;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // txtFlatAddress
             // 
-            this.txtFlatAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtFlatAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFlatAddress.Location = new System.Drawing.Point(23, 54);
             this.txtFlatAddress.Name = "txtFlatAddress";
-            this.txtFlatAddress.Size = new System.Drawing.Size(298, 27);
+            this.txtFlatAddress.Size = new System.Drawing.Size(298, 63);
             this.txtFlatAddress.TabIndex = 46;
+            this.txtFlatAddress.Text = "";
             // 
             // HouseOwnerFlatsIncome
             // 
@@ -283,8 +261,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnLoad;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox txtHouseOwner;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtFlatAddress;
+        private System.Windows.Forms.RichTextBox txtFlatAddress;
     }
 }
