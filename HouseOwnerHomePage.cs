@@ -13,7 +13,7 @@ namespace Mess_Management_System
 {
     public partial class HouseOwnerHomePage : Form
     {
-        private string _username; // Make sure this is set from the dashboard
+        private string _username; 
 
         public HouseOwnerHomePage()
         {

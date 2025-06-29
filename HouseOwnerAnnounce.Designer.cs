@@ -114,7 +114,8 @@
             // 
             // rtxtAnnounce
             // 
-            this.rtxtAnnounce.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.rtxtAnnounce.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rtxtAnnounce.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtxtAnnounce.Location = new System.Drawing.Point(18, 147);
             this.rtxtAnnounce.Name = "rtxtAnnounce";
             this.rtxtAnnounce.Size = new System.Drawing.Size(295, 193);
