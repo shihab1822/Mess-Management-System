@@ -19,7 +19,6 @@ namespace Mess_Management_System
             InitializeComponent();
         }
 
-        
 
         HouseOwnerAnnounce hOA = new HouseOwnerAnnounce();
 
@@ -50,6 +49,7 @@ namespace Mess_Management_System
         }
 
 
+        // Rented Flats and Income Button Click Event
         private void btnRentedFlatsandIncome_Click(object sender, EventArgs e)
         {
             int houseOwnerId = GetHouseOwnerIdByUsername(_username);
@@ -70,6 +70,8 @@ namespace Mess_Management_System
             hOFI.Show();
         }
 
+
+        // Announcements Button Click Event
         private void btnAnnouncements_Click(object sender, EventArgs e)
         {
 
@@ -111,39 +113,18 @@ namespace Mess_Management_System
             return houseOwnerId;
         }
 
-        private void LoadFlatsData()
-        {
-
-            SqlConnection con = new SqlConnection("Data Source=hp;Initial Catalog=\"Mess Management System\";Integrated Security=True;TrustServerCertificate=True");
-            try
-            {
-                con.Open();
-                string query = "SELECT * FROM Flats WHERE HouseOwnerID = @HouseOwnerID";
-                SqlCommand cmd = new SqlCommand(query, con);
-                cmd.Parameters.AddWithValue("@HouseOwnerID", GetHouseOwnerIdByUsername(_username));
-
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-
-                dgvHouseOwnerFlat.DataSource = dt;
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error loading flats: " + ex.Message);
-            }
-            finally
-            {
-
-                con.Close();
-            }
-        }
+        
         private void btnhome_Click(object sender, EventArgs e)
         {
-            LoadFlatsData();
-            panelHouseOwnerLoad.Controls.Clear();
-            tLpHouseOwner.Visible = true;
+            HouseOwnerHomePage hOH = new HouseOwnerHomePage(_username);
+            hOH.TopLevel = false;
+            hOH.AutoScroll = true;
+            hOH.FormBorderStyle = FormBorderStyle.None;
+            hOH.Dock = DockStyle.Fill;
+
+            this.panelHouseOwnerLoad.Controls.Clear();
+            this.panelHouseOwnerLoad.Controls.Add(hOH);
+            hOH.Show();
         }
     }
 }

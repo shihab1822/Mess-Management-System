@@ -82,6 +82,12 @@
     <Compile Include="HouseOwnerFlatsIncome.Designer.cs">
       <DependentUpon>HouseOwnerFlatsIncome.cs</DependentUpon>
     </Compile>
+    <Compile Include="HouseOwnerHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HouseOwnerHomePage.Designer.cs">
+      <DependentUpon>HouseOwnerHomePage.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManagerDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HouseOwnerFlatsIncome.resx">
       <DependentUpon>HouseOwnerFlatsIncome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HouseOwnerHomePage.resx">
+      <DependentUpon>HouseOwnerHomePage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManagerDashboard.resx">
       <DependentUpon>ManagerDashboard.cs</DependentUpon>
