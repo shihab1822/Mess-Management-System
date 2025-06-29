@@ -28,7 +28,7 @@ namespace Mess_Management_System
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            string flatAddress = txtFlatAddress.Text.Trim(); // Use TextBox now
+            string flatAddress = txtFlatAddress.Text.Trim(); 
             string rentText = txtRent.Text.Trim();
             string description = rtxtDescription.Text.Trim();
 
@@ -162,7 +162,7 @@ namespace Mess_Management_System
 
                 MessageBox.Show("Flat updated successfully!");
                 LoadFlatsData();
-                con.Close();
+                
             }
             catch (Exception ex)
             {

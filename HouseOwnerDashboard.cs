@@ -110,5 +110,40 @@ namespace Mess_Management_System
             }
             return houseOwnerId;
         }
+
+        private void LoadFlatsData()
+        {
+
+            SqlConnection con = new SqlConnection("Data Source=hp;Initial Catalog=\"Mess Management System\";Integrated Security=True;TrustServerCertificate=True");
+            try
+            {
+                con.Open();
+                string query = "SELECT * FROM Flats WHERE HouseOwnerID = @HouseOwnerID";
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@HouseOwnerID", GetHouseOwnerIdByUsername(_username));
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                dgvHouseOwnerFlat.DataSource = dt;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading flats: " + ex.Message);
+            }
+            finally
+            {
+
+                con.Close();
+            }
+        }
+        private void btnhome_Click(object sender, EventArgs e)
+        {
+            LoadFlatsData();
+            panelHouseOwnerLoad.Controls.Clear();
+            tLpHouseOwner.Visible = true;
+        }
     }
 }
