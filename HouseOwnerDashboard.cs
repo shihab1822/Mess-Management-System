@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace Mess_Management_System
 {
@@ -17,7 +19,8 @@ namespace Mess_Management_System
             InitializeComponent();
         }
 
-        HouseOwnerFlatsIncome hOFI = new HouseOwnerFlatsIncome(); 
+        
+
         HouseOwnerAnnounce hOA = new HouseOwnerAnnounce();
 
         private string _username;
@@ -49,7 +52,14 @@ namespace Mess_Management_System
 
         private void btnRentedFlatsandIncome_Click(object sender, EventArgs e)
         {
+            int houseOwnerId = GetHouseOwnerIdByUsername(_username);
+            if (houseOwnerId <= 0)
+            {
+                MessageBox.Show("Could not find HouseOwnerID for this user.");
+                return;
+            }
 
+            var hOFI = new HouseOwnerFlatsIncome(houseOwnerId);
             hOFI.TopLevel = false;
             hOFI.AutoScroll = true;
             hOFI.FormBorderStyle = FormBorderStyle.None;
@@ -71,6 +81,34 @@ namespace Mess_Management_System
             this.panelHouseOwnerLoad.Controls.Clear();
             this.panelHouseOwnerLoad.Controls.Add(hOA);
             hOA.Show();
+        }
+
+
+        private int GetHouseOwnerIdByUsername(string username)
+        {
+            int houseOwnerId = -1;
+            string connectionString = "Data Source=hp;Initial Catalog=\"Mess Management System\";Integrated Security=True;TrustServerCertificate=True";
+            string query = "SELECT UserID FROM Users WHERE Username = @Username";
+
+            using (SqlConnection con = new SqlConnection(connectionString))
+            using (SqlCommand cmd = new SqlCommand(query, con))
+            {
+                cmd.Parameters.AddWithValue("@Username", username);
+                try
+                {
+                    con.Open();
+                    object result = cmd.ExecuteScalar();
+                    if (result != null)
+                    {
+                        houseOwnerId = Convert.ToInt32(result);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error retrieving HouseOwnerID: " + ex.Message);
+                }
+            }
+            return houseOwnerId;
         }
     }
 }
