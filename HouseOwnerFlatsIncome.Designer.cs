@@ -31,6 +31,7 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.dgvHouseOwner = new System.Windows.Forms.DataGridView();
             this.panelAnnouncements = new System.Windows.Forms.Panel();
+            this.txtFlatAddress = new System.Windows.Forms.RichTextBox();
             this.rtxtDescription = new System.Windows.Forms.RichTextBox();
             this.lblnote = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -38,11 +39,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnLoad = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnSave = new System.Windows.Forms.Button();
-            this.txtFlatAddress = new System.Windows.Forms.RichTextBox();
+            this.btnClear = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHouseOwner)).BeginInit();
             this.panelAnnouncements.SuspendLayout();
@@ -82,10 +83,12 @@
             this.dgvHouseOwner.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvHouseOwner.Size = new System.Drawing.Size(773, 487);
             this.dgvHouseOwner.TabIndex = 39;
+            this.dgvHouseOwner.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHouseOwner_CellClick);
             // 
             // panelAnnouncements
             // 
             this.panelAnnouncements.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelAnnouncements.Controls.Add(this.btnClear);
             this.panelAnnouncements.Controls.Add(this.txtFlatAddress);
             this.panelAnnouncements.Controls.Add(this.rtxtDescription);
             this.panelAnnouncements.Controls.Add(this.lblnote);
@@ -97,6 +100,15 @@
             this.panelAnnouncements.Name = "panelAnnouncements";
             this.panelAnnouncements.Size = new System.Drawing.Size(338, 487);
             this.panelAnnouncements.TabIndex = 40;
+            // 
+            // txtFlatAddress
+            // 
+            this.txtFlatAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFlatAddress.Location = new System.Drawing.Point(23, 54);
+            this.txtFlatAddress.Name = "txtFlatAddress";
+            this.txtFlatAddress.Size = new System.Drawing.Size(298, 63);
+            this.txtFlatAddress.TabIndex = 46;
+            this.txtFlatAddress.Text = "";
             // 
             // rtxtDescription
             // 
@@ -150,8 +162,8 @@
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.btnLoad);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnUpdate);
+            this.panel1.Controls.Add(this.btnDelete);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 496);
             this.panel1.Name = "panel1";
@@ -171,28 +183,30 @@
             this.btnLoad.UseVisualStyleBackColor = false;
             this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
-            // button2
+            // btnUpdate
             // 
-            this.button2.BackColor = System.Drawing.Color.Yellow;
-            this.button2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(313, 1);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(146, 39);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Update";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnUpdate.BackColor = System.Drawing.Color.Yellow;
+            this.btnUpdate.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.Location = new System.Drawing.Point(313, 1);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(146, 39);
+            this.btnUpdate.TabIndex = 4;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // button1
+            // btnDelete
             // 
-            this.button1.BackColor = System.Drawing.Color.Tomato;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(625, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(146, 39);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Delete";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnDelete.BackColor = System.Drawing.Color.Tomato;
+            this.btnDelete.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnDelete.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Location = new System.Drawing.Point(625, 0);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(146, 39);
+            this.btnDelete.TabIndex = 3;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // panel2
             // 
@@ -217,14 +231,18 @@
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // txtFlatAddress
+            // btnClear
             // 
-            this.txtFlatAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFlatAddress.Location = new System.Drawing.Point(23, 54);
-            this.txtFlatAddress.Name = "txtFlatAddress";
-            this.txtFlatAddress.Size = new System.Drawing.Size(298, 63);
-            this.txtFlatAddress.TabIndex = 46;
-            this.txtFlatAddress.Text = "";
+            this.btnClear.BackColor = System.Drawing.Color.Gold;
+            this.btnClear.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnClear.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.Location = new System.Drawing.Point(0, 444);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(336, 41);
+            this.btnClear.TabIndex = 47;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // HouseOwnerFlatsIncome
             // 
@@ -257,10 +275,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnLoad;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.RichTextBox txtFlatAddress;
+        private System.Windows.Forms.Button btnClear;
     }
 }
