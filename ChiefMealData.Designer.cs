@@ -32,6 +32,8 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnSave = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.btnClear = new System.Windows.Forms.Button();
             this.dtpJoiningDate = new System.Windows.Forms.DateTimePicker();
             this.lblMealDate = new System.Windows.Forms.Label();
@@ -42,8 +44,6 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnLoad = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChief)).BeginInit();
@@ -99,6 +99,26 @@
             this.panel3.Size = new System.Drawing.Size(331, 487);
             this.panel3.TabIndex = 14;
             // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(25, 140);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(252, 34);
+            this.textBox1.TabIndex = 43;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(25, 115);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(108, 22);
+            this.label5.TabIndex = 42;
+            this.label5.Text = "Meal Time:";
+            // 
             // btnClear
             // 
             this.btnClear.BackColor = System.Drawing.Color.Gold;
@@ -123,11 +143,11 @@
             // lblMealDate
             // 
             this.lblMealDate.AutoSize = true;
-            this.lblMealDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMealDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMealDate.ForeColor = System.Drawing.Color.White;
-            this.lblMealDate.Location = new System.Drawing.Point(25, 33);
+            this.lblMealDate.Location = new System.Drawing.Point(25, 29);
             this.lblMealDate.Name = "lblMealDate";
-            this.lblMealDate.Size = new System.Drawing.Size(91, 20);
+            this.lblMealDate.Size = new System.Drawing.Size(101, 20);
             this.lblMealDate.TabIndex = 34;
             this.lblMealDate.Text = "Meal Date:";
             // 
@@ -142,11 +162,11 @@
             // lblFoodDescription
             // 
             this.lblFoodDescription.AutoSize = true;
-            this.lblFoodDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFoodDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFoodDescription.ForeColor = System.Drawing.Color.White;
             this.lblFoodDescription.Location = new System.Drawing.Point(25, 189);
             this.lblFoodDescription.Name = "lblFoodDescription";
-            this.lblFoodDescription.Size = new System.Drawing.Size(142, 20);
+            this.lblFoodDescription.Size = new System.Drawing.Size(159, 20);
             this.lblFoodDescription.TabIndex = 29;
             this.lblFoodDescription.Text = "Food Description:";
             // 
@@ -196,6 +216,7 @@
             this.btnLoad.TabIndex = 15;
             this.btnLoad.Text = "Load";
             this.btnLoad.UseVisualStyleBackColor = false;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
             // btnUpdate
             // 
@@ -207,26 +228,6 @@
             this.btnUpdate.TabIndex = 16;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(25, 115);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(108, 22);
-            this.label5.TabIndex = 42;
-            this.label5.Text = "Meal Time:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(25, 140);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(252, 34);
-            this.textBox1.TabIndex = 43;
             // 
             // ChiefMealData
             // 
