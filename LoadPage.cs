@@ -17,9 +17,16 @@ namespace Mess_Management_System
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void LoadPage_Load(object sender, EventArgs e)
         {
+            this.FormBorderStyle = FormBorderStyle.None;
+           
+        }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timer1.Start();
+            this.Close();
         }
     }
 }

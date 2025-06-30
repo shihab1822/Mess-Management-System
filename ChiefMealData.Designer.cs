@@ -52,8 +52,9 @@
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 47F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1123, 540);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
@@ -68,7 +69,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(789, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(331, 534);
+            this.panel3.Size = new System.Drawing.Size(331, 487);
             this.panel3.TabIndex = 14;
             // 
             // dtpJoiningDate
@@ -121,7 +122,7 @@
             this.dgvChief.ReadOnly = true;
             this.dgvChief.RowHeadersWidth = 51;
             this.dgvChief.RowTemplate.Height = 24;
-            this.dgvChief.Size = new System.Drawing.Size(780, 534);
+            this.dgvChief.Size = new System.Drawing.Size(780, 487);
             this.dgvChief.TabIndex = 13;
             // 
             // ChiefMealData
