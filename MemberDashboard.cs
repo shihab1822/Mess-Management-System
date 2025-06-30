@@ -56,7 +56,15 @@ namespace Mess_Management_System
 
         private void btnAnnouncements_Click(object sender, EventArgs e)
         {
+            MemberAnnounce mA = new MemberAnnounce();
+            mA.TopLevel = false;
+            mA.AutoScroll = true;
+            mA.FormBorderStyle = FormBorderStyle.None;
+            mA.Dock = DockStyle.Fill;
 
+            this.panelMemberLoad.Controls.Clear();
+            this.panelMemberLoad.Controls.Add(mA);
+            mA.Show();
         }
     }
 }

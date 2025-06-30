@@ -52,6 +52,7 @@
             this.lblHouseOwnerView = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btnSave = new System.Windows.Forms.Button();
+            this.panelMemberLoad = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMember)).BeginInit();
@@ -324,6 +325,14 @@
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
             // 
+            // panelMemberLoad
+            // 
+            this.panelMemberLoad.BackColor = System.Drawing.Color.Transparent;
+            this.panelMemberLoad.Location = new System.Drawing.Point(228, 92);
+            this.panelMemberLoad.Name = "panelMemberLoad";
+            this.panelMemberLoad.Size = new System.Drawing.Size(1141, 645);
+            this.panelMemberLoad.TabIndex = 24;
+            // 
             // MemberDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -331,6 +340,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1382, 753);
+            this.Controls.Add(this.panelMemberLoad);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel5);
@@ -382,6 +392,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker dtpPayDate;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panelMemberLoad;
     }
 }
 

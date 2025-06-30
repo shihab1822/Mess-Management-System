@@ -262,6 +262,7 @@
             this.btnAnnouncements.TabIndex = 5;
             this.btnAnnouncements.Text = "Announcements";
             this.btnAnnouncements.UseVisualStyleBackColor = false;
+            this.btnAnnouncements.Click += new System.EventHandler(this.btnAnnouncements_Click);
             // 
             // btnBillingInformation
             // 

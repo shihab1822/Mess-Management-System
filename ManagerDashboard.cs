@@ -136,6 +136,11 @@ namespace Mess_Management_System
             }
             return userId;
         }
+
+        private void btnAnnouncements_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
