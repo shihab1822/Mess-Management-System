@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChiefAnnounce));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.penalFlatsAndIncome = new System.Windows.Forms.Panel();
             this.dtpAnnounce = new System.Windows.Forms.DateTimePicker();
@@ -143,7 +142,6 @@
             this.dgvHouseOwner.AllowUserToDeleteRows = false;
             this.dgvHouseOwner.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvHouseOwner.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvHouseOwner.GridColor = System.Drawing.Color.DarkGray;
             this.dgvHouseOwner.Location = new System.Drawing.Point(3, 3);
             this.dgvHouseOwner.Name = "dgvHouseOwner";
             this.dgvHouseOwner.ReadOnly = true;
@@ -225,15 +223,14 @@
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // ChiefAnnounce
+            // MemberAnnounce
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1123, 540);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "ChiefAnnounce";
+            this.Name = "MemberAnnounce";
             this.Text = "HouseOwnerAnnounce";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.penalFlatsAndIncome.ResumeLayout(false);
@@ -261,4 +258,6 @@
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker dtpAnnounce;
+
     }
+}

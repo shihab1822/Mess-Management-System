@@ -152,6 +152,7 @@
             this.dgvHouseOwner.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvHouseOwner.Size = new System.Drawing.Size(774, 487);
             this.dgvHouseOwner.TabIndex = 39;
+            this.dgvHouseOwner.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHouseOwner_CellClick);
             // 
             // panel1
             // 

@@ -100,6 +100,12 @@
     <Compile Include="ManagerDashboard.Designer.cs">
       <DependentUpon>ManagerDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="MemberAnnounce.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberAnnounce.Designer.cs">
+      <DependentUpon>MemberAnnounce.cs</DependentUpon>
+    </Compile>
     <Compile Include="MemberDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ManagerDashboard.resx">
       <DependentUpon>ManagerDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberAnnounce.resx">
+      <DependentUpon>MemberAnnounce.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MemberDashboard.resx">
       <DependentUpon>MemberDashboard.cs</DependentUpon>
