@@ -271,7 +271,7 @@
             this.btnAssignChiefs.Name = "btnAssignChiefs";
             this.btnAssignChiefs.Size = new System.Drawing.Size(208, 61);
             this.btnAssignChiefs.TabIndex = 2;
-            this.btnAssignChiefs.Text = "Assign Chiefs";
+            this.btnAssignChiefs.Text = "Assign Meal";
             this.btnAssignChiefs.UseVisualStyleBackColor = false;
             this.btnAssignChiefs.Click += new System.EventHandler(this.btnAssignChiefs_Click);
             // 
