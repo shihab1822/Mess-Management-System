@@ -32,16 +32,6 @@
             this.btnhome = new System.Windows.Forms.Button();
             this.dgvManager = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.cmbUsername = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.chkbIsManager = new System.Windows.Forms.CheckBox();
-            this.dtpJoiningDate = new System.Windows.Forms.DateTimePicker();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtMemberName = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtMemberID = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnAnnouncements = new System.Windows.Forms.Button();
             this.btnBillingInformation = new System.Windows.Forms.Button();
@@ -52,6 +42,16 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblHouseOwnerView = new System.Windows.Forms.Label();
             this.panelManagerLoad = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtMemberID = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtMemberName = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.dtpJoiningDate = new System.Windows.Forms.DateTimePicker();
+            this.chkbIsManager = new System.Windows.Forms.CheckBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cmbUsername = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvManager)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -105,117 +105,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(279, 588);
             this.panel3.TabIndex = 7;
-            // 
-            // cmbUsername
-            // 
-            this.cmbUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbUsername.FormattingEnabled = true;
-            this.cmbUsername.Location = new System.Drawing.Point(36, 54);
-            this.cmbUsername.Name = "cmbUsername";
-            this.cmbUsername.Size = new System.Drawing.Size(185, 28);
-            this.cmbUsername.TabIndex = 24;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(32, 31);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(106, 22);
-            this.label5.TabIndex = 23;
-            this.label5.Text = "Username:";
-            // 
-            // chkbIsManager
-            // 
-            this.chkbIsManager.AutoSize = true;
-            this.chkbIsManager.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkbIsManager.Location = new System.Drawing.Point(160, 247);
-            this.chkbIsManager.Name = "chkbIsManager";
-            this.chkbIsManager.Size = new System.Drawing.Size(18, 17);
-            this.chkbIsManager.TabIndex = 22;
-            this.chkbIsManager.UseVisualStyleBackColor = true;
-            // 
-            // dtpJoiningDate
-            // 
-            this.dtpJoiningDate.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpJoiningDate.CalendarMonthBackground = System.Drawing.Color.Transparent;
-            this.dtpJoiningDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpJoiningDate.Location = new System.Drawing.Point(36, 316);
-            this.dtpJoiningDate.Name = "dtpJoiningDate";
-            this.dtpJoiningDate.Size = new System.Drawing.Size(189, 27);
-            this.dtpJoiningDate.TabIndex = 21;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(36, 285);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(128, 22);
-            this.label4.TabIndex = 20;
-            this.label4.Text = "Joining Date:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(36, 244);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(114, 22);
-            this.label3.TabIndex = 17;
-            this.label3.Text = "Is Manager:";
-            // 
-            // txtMemberName
-            // 
-            this.txtMemberName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtMemberName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMemberName.ForeColor = System.Drawing.Color.BlueViolet;
-            this.txtMemberName.Location = new System.Drawing.Point(36, 193);
-            this.txtMemberName.Name = "txtMemberName";
-            this.txtMemberName.Size = new System.Drawing.Size(184, 27);
-            this.txtMemberName.TabIndex = 16;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(36, 170);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 22);
-            this.label2.TabIndex = 15;
-            this.label2.Text = "Name:";
-            // 
-            // txtMemberID
-            // 
-            this.txtMemberID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtMemberID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMemberID.ForeColor = System.Drawing.Color.BlueViolet;
-            this.txtMemberID.Location = new System.Drawing.Point(36, 125);
-            this.txtMemberID.Name = "txtMemberID";
-            this.txtMemberID.ReadOnly = true;
-            this.txtMemberID.Size = new System.Drawing.Size(184, 27);
-            this.txtMemberID.TabIndex = 14;
-            this.txtMemberID.Text = "Auto Generated";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(36, 102);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 22);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Member ID:";
             // 
             // panel2
             // 
@@ -340,6 +229,117 @@
             this.panelManagerLoad.Size = new System.Drawing.Size(1141, 645);
             this.panelManagerLoad.TabIndex = 24;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(36, 102);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(111, 22);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Member ID:";
+            // 
+            // txtMemberID
+            // 
+            this.txtMemberID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtMemberID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMemberID.ForeColor = System.Drawing.Color.BlueViolet;
+            this.txtMemberID.Location = new System.Drawing.Point(36, 125);
+            this.txtMemberID.Name = "txtMemberID";
+            this.txtMemberID.ReadOnly = true;
+            this.txtMemberID.Size = new System.Drawing.Size(184, 27);
+            this.txtMemberID.TabIndex = 14;
+            this.txtMemberID.Text = "Auto Generated";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(36, 170);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(67, 22);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "Name:";
+            // 
+            // txtMemberName
+            // 
+            this.txtMemberName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtMemberName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMemberName.ForeColor = System.Drawing.Color.BlueViolet;
+            this.txtMemberName.Location = new System.Drawing.Point(36, 193);
+            this.txtMemberName.Name = "txtMemberName";
+            this.txtMemberName.Size = new System.Drawing.Size(184, 27);
+            this.txtMemberName.TabIndex = 16;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(36, 244);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(114, 22);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "Is Manager:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(36, 285);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(128, 22);
+            this.label4.TabIndex = 20;
+            this.label4.Text = "Joining Date:";
+            // 
+            // dtpJoiningDate
+            // 
+            this.dtpJoiningDate.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpJoiningDate.CalendarMonthBackground = System.Drawing.Color.Transparent;
+            this.dtpJoiningDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpJoiningDate.Location = new System.Drawing.Point(36, 316);
+            this.dtpJoiningDate.Name = "dtpJoiningDate";
+            this.dtpJoiningDate.Size = new System.Drawing.Size(189, 27);
+            this.dtpJoiningDate.TabIndex = 21;
+            // 
+            // chkbIsManager
+            // 
+            this.chkbIsManager.AutoSize = true;
+            this.chkbIsManager.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkbIsManager.Location = new System.Drawing.Point(160, 247);
+            this.chkbIsManager.Name = "chkbIsManager";
+            this.chkbIsManager.Size = new System.Drawing.Size(18, 17);
+            this.chkbIsManager.TabIndex = 22;
+            this.chkbIsManager.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(32, 31);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(106, 22);
+            this.label5.TabIndex = 23;
+            this.label5.Text = "Username:";
+            // 
+            // cmbUsername
+            // 
+            this.cmbUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbUsername.FormattingEnabled = true;
+            this.cmbUsername.Location = new System.Drawing.Point(36, 54);
+            this.cmbUsername.Name = "cmbUsername";
+            this.cmbUsername.Size = new System.Drawing.Size(185, 28);
+            this.cmbUsername.TabIndex = 24;
+            // 
             // ManagerDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -384,16 +384,16 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblHouseOwnerView;
         private System.Windows.Forms.Label lblWelUserName;
-        private System.Windows.Forms.TextBox txtMemberID;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtMemberName;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DateTimePicker dtpJoiningDate;
-        private System.Windows.Forms.CheckBox chkbIsManager;
+        private System.Windows.Forms.Panel panelManagerLoad;
         private System.Windows.Forms.ComboBox cmbUsername;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Panel panelManagerLoad;
+        private System.Windows.Forms.CheckBox chkbIsManager;
+        private System.Windows.Forms.DateTimePicker dtpJoiningDate;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtMemberName;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtMemberID;
+        private System.Windows.Forms.Label label1;
     }
 }
