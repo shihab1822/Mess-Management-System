@@ -44,11 +44,11 @@
             this.lblSignUp.AutoSize = true;
             this.lblSignUp.BackColor = System.Drawing.Color.Transparent;
             this.lblSignUp.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblSignUp.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSignUp.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSignUp.ForeColor = System.Drawing.Color.White;
-            this.lblSignUp.Location = new System.Drawing.Point(721, 545);
+            this.lblSignUp.Location = new System.Drawing.Point(745, 545);
             this.lblSignUp.Name = "lblSignUp";
-            this.lblSignUp.Size = new System.Drawing.Size(63, 21);
+            this.lblSignUp.Size = new System.Drawing.Size(73, 24);
             this.lblSignUp.TabIndex = 15;
             this.lblSignUp.Text = "Sign Up";
             this.lblSignUp.Click += new System.EventHandler(this.lblSignUp_Click);
@@ -57,11 +57,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(515, 545);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(185, 20);
+            this.label2.Size = new System.Drawing.Size(206, 24);
             this.label2.TabIndex = 14;
             this.label2.Text = "Don\'t have an account?\r\n";
             // 

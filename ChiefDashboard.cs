@@ -17,7 +17,7 @@ namespace Mess_Management_System
             InitializeComponent();
         }
 
-        ChiefAnnounce chA = new ChiefAnnounce();
+        
         ChiefMealData chMD = new ChiefMealData();
 
         private string _username;
@@ -56,6 +56,7 @@ namespace Mess_Management_System
 
         private void btnAnnouncements_Click(object sender, EventArgs e)
         {
+            ChiefAnnounce chA = new ChiefAnnounce();
             chA.TopLevel = false;
             chA.AutoScroll = true;
             chA.FormBorderStyle = FormBorderStyle.None;

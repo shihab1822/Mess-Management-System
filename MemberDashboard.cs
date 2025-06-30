@@ -54,27 +54,7 @@ namespace Mess_Management_System
 
         }
 
-        private void btnBillsandPayments_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnAssignedFlatandRoommates_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnCommunicationwithHouseOwner_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnActiveMonthDetails_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
+        private void btnAnnouncements_Click(object sender, EventArgs e)
         {
 
         }

@@ -101,6 +101,7 @@
             this.btnAnnouncements.TabIndex = 8;
             this.btnAnnouncements.Text = "Announcements";
             this.btnAnnouncements.UseVisualStyleBackColor = false;
+            this.btnAnnouncements.Click += new System.EventHandler(this.btnAnnouncements_Click);
             // 
             // btnBillingInformation
             // 
@@ -129,7 +130,6 @@
             this.btnPayments.TabIndex = 2;
             this.btnPayments.Text = "Payments";
             this.btnPayments.UseVisualStyleBackColor = false;
-            this.btnPayments.Click += new System.EventHandler(this.btnBillsandPayments_Click);
             // 
             // panel3
             // 
@@ -145,7 +145,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(279, 587);
             this.panel3.TabIndex = 3;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // dtpPayDate
             // 
