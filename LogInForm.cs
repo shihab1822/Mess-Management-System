@@ -73,7 +73,7 @@ namespace Mess_Management_System
                 }
                 finally
                 {
-                    if (conn.State == ConnectionState.Open)
+                    
                         conn.Close();
                 }
             }

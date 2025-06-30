@@ -49,7 +49,7 @@ namespace Mess_Management_System
         }
 
 
-        // Rented Flats and Income Button Click Event
+  
         private void btnRentedFlatsandIncome_Click(object sender, EventArgs e)
         {
             int houseOwnerId = GetHouseOwnerIdByUsername(_username);
@@ -71,7 +71,7 @@ namespace Mess_Management_System
         }
 
 
-        // Announcements Button Click Event
+   
         private void btnAnnouncements_Click(object sender, EventArgs e)
         {
 

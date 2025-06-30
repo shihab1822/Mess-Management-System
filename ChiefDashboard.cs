@@ -18,7 +18,6 @@ namespace Mess_Management_System
         }
 
         
-        ChiefMealData chMD = new ChiefMealData();
 
         private string _username;
         public ChiefDashboard(string username) : this()
@@ -44,6 +43,8 @@ namespace Mess_Management_System
 
         private void btnMealData_Click(object sender, EventArgs e)
         {
+
+            ChiefMealData chMD = new ChiefMealData();
             chMD.TopLevel = false;
             chMD.AutoScroll = true;
             chMD.FormBorderStyle = FormBorderStyle.None;

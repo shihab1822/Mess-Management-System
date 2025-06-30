@@ -38,7 +38,7 @@ namespace Mess_Management_System
 
         private void SaveUserToDatabase(string email, string username, string password, string role)
         {
-            
+
 
             string query = "INSERT INTO Users (Email, Username, Password, Role) VALUES (@Email, @Username, @Password, @Role)";
 
@@ -59,10 +59,10 @@ namespace Mess_Management_System
         {
             string email = txtEmail.Text.Trim();
             string username = txtUsername.Text.Trim();
-            string password = txtPassword.Text; // Consider hashing in production
+            string password = txtPassword.Text;
             string role = cmbRole.SelectedItem?.ToString() ?? "";
 
-            // Basic validation
+
             if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(username) ||
                 string.IsNullOrEmpty(password) || string.IsNullOrEmpty(role))
             {
@@ -82,10 +82,10 @@ namespace Mess_Management_System
             }
             finally
             {
-                if (conn.State == ConnectionState.Open)
-                {
-                    conn.Close();
-                }
+
+
+                conn.Close();
+
             }
 
         }
