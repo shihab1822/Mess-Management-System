@@ -51,7 +51,6 @@
             this.lblWelUserName = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblHouseOwnerView = new System.Windows.Forms.Label();
-            this.panelHouseOwnerLoad = new System.Windows.Forms.Panel();
             this.panelManagerLoad = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvManager)).BeginInit();
             this.panel3.SuspendLayout();
@@ -259,6 +258,7 @@
             this.btnBillingInformation.TabIndex = 4;
             this.btnBillingInformation.Text = "Billing Information";
             this.btnBillingInformation.UseVisualStyleBackColor = false;
+            this.btnBillingInformation.Click += new System.EventHandler(this.btnBillingInformation_Click);
             // 
             // btnAssignChiefs
             // 
@@ -273,6 +273,7 @@
             this.btnAssignChiefs.TabIndex = 2;
             this.btnAssignChiefs.Text = "Assign Chiefs";
             this.btnAssignChiefs.UseVisualStyleBackColor = false;
+            this.btnAssignChiefs.Click += new System.EventHandler(this.btnAssignChiefs_Click);
             // 
             // btnManageMembers
             // 
@@ -314,7 +315,6 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.panelHouseOwnerLoad);
             this.panel1.Controls.Add(this.lblHouseOwnerView);
             this.panel1.Location = new System.Drawing.Point(13, 16);
             this.panel1.Name = "panel1";
@@ -332,18 +332,10 @@
             this.lblHouseOwnerView.TabIndex = 0;
             this.lblHouseOwnerView.Text = "Manager";
             // 
-            // panelHouseOwnerLoad
-            // 
-            this.panelHouseOwnerLoad.BackColor = System.Drawing.Color.Transparent;
-            this.panelHouseOwnerLoad.Location = new System.Drawing.Point(213, 3);
-            this.panelHouseOwnerLoad.Name = "panelHouseOwnerLoad";
-            this.panelHouseOwnerLoad.Size = new System.Drawing.Size(1141, 645);
-            this.panelHouseOwnerLoad.TabIndex = 24;
-            // 
             // panelManagerLoad
             // 
             this.panelManagerLoad.BackColor = System.Drawing.Color.Transparent;
-            this.panelManagerLoad.Location = new System.Drawing.Point(229, 123);
+            this.panelManagerLoad.Location = new System.Drawing.Point(229, 96);
             this.panelManagerLoad.Name = "panelManagerLoad";
             this.panelManagerLoad.Size = new System.Drawing.Size(1141, 645);
             this.panelManagerLoad.TabIndex = 24;
@@ -402,7 +394,6 @@
         private System.Windows.Forms.CheckBox chkbIsManager;
         private System.Windows.Forms.ComboBox cmbUsername;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Panel panelHouseOwnerLoad;
         private System.Windows.Forms.Panel panelManagerLoad;
     }
 }

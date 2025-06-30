@@ -66,5 +66,18 @@ namespace Mess_Management_System
             this.panelMemberLoad.Controls.Add(mA);
             mA.Show();
         }
+
+        private void btnBillingInformation_Click(object sender, EventArgs e)
+        {
+            BillingInformation bi = new BillingInformation();
+            bi.TopLevel = false;
+            bi.AutoScroll = true;
+            bi.FormBorderStyle = FormBorderStyle.None;
+            bi.Dock = DockStyle.Fill;
+
+            this.panelMemberLoad.Controls.Clear();
+            this.panelMemberLoad.Controls.Add(bi);
+            bi.Show();
+        }
     }
 }

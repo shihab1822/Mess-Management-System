@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BillingInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BillingInformation.Designer.cs">
+      <DependentUpon>BillingInformation.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChiefAnnounce.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,11 +100,23 @@
     <Compile Include="LoadPage.Designer.cs">
       <DependentUpon>LoadPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManageMembers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageMembers.Designer.cs">
+      <DependentUpon>ManageMembers.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManagerAnnounce.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ManagerAnnounce.Designer.cs">
       <DependentUpon>ManagerAnnounce.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerAssignChiefs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerAssignChiefs.Designer.cs">
+      <DependentUpon>ManagerAssignChiefs.cs</DependentUpon>
     </Compile>
     <Compile Include="ManagerDashboard.cs">
       <SubType>Form</SubType>

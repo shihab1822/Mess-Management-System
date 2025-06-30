@@ -61,7 +61,15 @@ namespace Mess_Management_System
 
         private void btnManageMembers_Click(object sender, EventArgs e)
         {
+            ManageMembers mm = new ManageMembers();
+            mm.TopLevel = false;
+            mm.AutoScroll = true;
+            mm.FormBorderStyle = FormBorderStyle.None;
+            mm.Dock = DockStyle.Fill;
 
+            this.panelManagerLoad.Controls.Clear();
+            this.panelManagerLoad.Controls.Add(mm);
+            mm.Show();
 
             string query = "SELECT MemberID, Name, IsManager, JoiningDate FROM Members";
             using (SqlDataAdapter adapter = new SqlDataAdapter(query, conn))
@@ -148,6 +156,32 @@ namespace Mess_Management_System
             this.panelManagerLoad.Controls.Clear();
             this.panelManagerLoad.Controls.Add(maNA);
             maNA.Show();
+        }
+
+        private void btnAssignChiefs_Click(object sender, EventArgs e)
+        {
+            ManagerAssignChiefs maAC = new ManagerAssignChiefs();
+            maAC.TopLevel = false;
+            maAC.AutoScroll = true;
+            maAC.FormBorderStyle = FormBorderStyle.None;
+            maAC.Dock = DockStyle.Fill;
+
+            this.panelManagerLoad.Controls.Clear();
+            this.panelManagerLoad.Controls.Add(maAC);
+            maAC.Show();
+        }
+
+        private void btnBillingInformation_Click(object sender, EventArgs e)
+        {
+            BillingInformation bi = new BillingInformation();
+            bi.TopLevel = false;
+            bi.AutoScroll = true;
+            bi.FormBorderStyle = FormBorderStyle.None;
+            bi.Dock = DockStyle.Fill;
+
+            this.panelManagerLoad.Controls.Clear();
+            this.panelManagerLoad.Controls.Add(bi);
+            bi.Show();
         }
     }
 }

@@ -99,6 +99,7 @@
             this.btnBillingInformation.TabIndex = 7;
             this.btnBillingInformation.Text = "Billing Information";
             this.btnBillingInformation.UseVisualStyleBackColor = false;
+            this.btnBillingInformation.Click += new System.EventHandler(this.btnBillingInformation_Click);
             // 
             // btnPayments
             // 
