@@ -177,7 +177,7 @@
             // panelManagerLoad
             // 
             this.panelManagerLoad.BackColor = System.Drawing.Color.Transparent;
-            this.panelManagerLoad.Location = new System.Drawing.Point(229, 92);
+            this.panelManagerLoad.Location = new System.Drawing.Point(229, 91);
             this.panelManagerLoad.Name = "panelManagerLoad";
             this.panelManagerLoad.Size = new System.Drawing.Size(1141, 645);
             this.panelManagerLoad.TabIndex = 24;
