@@ -16,5 +16,10 @@ namespace Mess_Management_System
         {
             InitializeComponent();
         }
+
+        private void dgvHouseOwner_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

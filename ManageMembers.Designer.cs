@@ -47,7 +47,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtMemberName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtMemberID = new System.Windows.Forms.TextBox();
+            this.cmbFlatAddress = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.penalFlatsAndIncome.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -60,6 +60,8 @@
             // 
             this.penalFlatsAndIncome.BackColor = System.Drawing.Color.Transparent;
             this.penalFlatsAndIncome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.penalFlatsAndIncome.Controls.Add(this.cmbFlatAddress);
+            this.penalFlatsAndIncome.Controls.Add(this.label1);
             this.penalFlatsAndIncome.Controls.Add(this.cmbUsername);
             this.penalFlatsAndIncome.Controls.Add(this.label5);
             this.penalFlatsAndIncome.Controls.Add(this.chkbIsManager);
@@ -68,8 +70,6 @@
             this.penalFlatsAndIncome.Controls.Add(this.label3);
             this.penalFlatsAndIncome.Controls.Add(this.txtMemberName);
             this.penalFlatsAndIncome.Controls.Add(this.label2);
-            this.penalFlatsAndIncome.Controls.Add(this.txtMemberID);
-            this.penalFlatsAndIncome.Controls.Add(this.label1);
             this.penalFlatsAndIncome.Controls.Add(this.btnClear);
             this.penalFlatsAndIncome.Dock = System.Windows.Forms.DockStyle.Fill;
             this.penalFlatsAndIncome.Location = new System.Drawing.Point(783, 3);
@@ -122,6 +122,7 @@
             this.dgvHouseOwner.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvHouseOwner.Size = new System.Drawing.Size(774, 487);
             this.dgvHouseOwner.TabIndex = 39;
+            this.dgvHouseOwner.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHouseOwner_CellContentClick);
             // 
             // panel1
             // 
@@ -195,7 +196,7 @@
             // 
             this.cmbUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbUsername.FormattingEnabled = true;
-            this.cmbUsername.Location = new System.Drawing.Point(57, 41);
+            this.cmbUsername.Location = new System.Drawing.Point(48, 238);
             this.cmbUsername.Name = "cmbUsername";
             this.cmbUsername.Size = new System.Drawing.Size(185, 28);
             this.cmbUsername.TabIndex = 50;
@@ -206,7 +207,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(53, 18);
+            this.label5.Location = new System.Drawing.Point(44, 215);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(106, 22);
             this.label5.TabIndex = 49;
@@ -216,7 +217,7 @@
             // 
             this.chkbIsManager.AutoSize = true;
             this.chkbIsManager.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkbIsManager.Location = new System.Drawing.Point(181, 234);
+            this.chkbIsManager.Location = new System.Drawing.Point(168, 99);
             this.chkbIsManager.Name = "chkbIsManager";
             this.chkbIsManager.Size = new System.Drawing.Size(18, 17);
             this.chkbIsManager.TabIndex = 48;
@@ -227,7 +228,7 @@
             this.dtpJoiningDate.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpJoiningDate.CalendarMonthBackground = System.Drawing.Color.Transparent;
             this.dtpJoiningDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpJoiningDate.Location = new System.Drawing.Point(57, 303);
+            this.dtpJoiningDate.Location = new System.Drawing.Point(44, 168);
             this.dtpJoiningDate.Name = "dtpJoiningDate";
             this.dtpJoiningDate.Size = new System.Drawing.Size(189, 27);
             this.dtpJoiningDate.TabIndex = 47;
@@ -238,7 +239,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(57, 272);
+            this.label4.Location = new System.Drawing.Point(44, 137);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(128, 22);
             this.label4.TabIndex = 46;
@@ -250,7 +251,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(57, 231);
+            this.label3.Location = new System.Drawing.Point(44, 96);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(114, 22);
             this.label3.TabIndex = 45;
@@ -261,7 +262,7 @@
             this.txtMemberName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtMemberName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMemberName.ForeColor = System.Drawing.Color.BlueViolet;
-            this.txtMemberName.Location = new System.Drawing.Point(57, 180);
+            this.txtMemberName.Location = new System.Drawing.Point(44, 45);
             this.txtMemberName.Name = "txtMemberName";
             this.txtMemberName.Size = new System.Drawing.Size(184, 27);
             this.txtMemberName.TabIndex = 44;
@@ -272,23 +273,20 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(57, 157);
+            this.label2.Location = new System.Drawing.Point(44, 22);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 22);
             this.label2.TabIndex = 43;
             this.label2.Text = "Name:";
             // 
-            // txtMemberID
+            // cmbFlatAddress
             // 
-            this.txtMemberID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtMemberID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMemberID.ForeColor = System.Drawing.Color.BlueViolet;
-            this.txtMemberID.Location = new System.Drawing.Point(57, 112);
-            this.txtMemberID.Name = "txtMemberID";
-            this.txtMemberID.ReadOnly = true;
-            this.txtMemberID.Size = new System.Drawing.Size(184, 27);
-            this.txtMemberID.TabIndex = 42;
-            this.txtMemberID.Text = "Auto Generated";
+            this.cmbFlatAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbFlatAddress.FormattingEnabled = true;
+            this.cmbFlatAddress.Location = new System.Drawing.Point(48, 304);
+            this.cmbFlatAddress.Name = "cmbFlatAddress";
+            this.cmbFlatAddress.Size = new System.Drawing.Size(185, 28);
+            this.cmbFlatAddress.TabIndex = 52;
             // 
             // label1
             // 
@@ -296,11 +294,11 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(57, 89);
+            this.label1.Location = new System.Drawing.Point(44, 281);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 22);
-            this.label1.TabIndex = 41;
-            this.label1.Text = "Member ID:";
+            this.label1.Size = new System.Drawing.Size(129, 22);
+            this.label1.TabIndex = 51;
+            this.label1.Text = "Flat Address:";
             // 
             // ManageMembers
             // 
@@ -342,7 +340,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtMemberName;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtMemberID;
+        private System.Windows.Forms.ComboBox cmbFlatAddress;
         private System.Windows.Forms.Label label1;
     }
 }
