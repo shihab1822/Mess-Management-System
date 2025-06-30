@@ -213,7 +213,7 @@
             this.ClientSize = new System.Drawing.Size(1123, 540);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "ChiefMealData";
-            this.Text = "ChiefMealData";
+            this.Text = "ChefMealData";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();

@@ -137,9 +137,9 @@
             this.lblHouseOwnerView.ForeColor = System.Drawing.Color.White;
             this.lblHouseOwnerView.Location = new System.Drawing.Point(104, 3);
             this.lblHouseOwnerView.Name = "lblHouseOwnerView";
-            this.lblHouseOwnerView.Size = new System.Drawing.Size(116, 53);
+            this.lblHouseOwnerView.Size = new System.Drawing.Size(105, 53);
             this.lblHouseOwnerView.TabIndex = 0;
-            this.lblHouseOwnerView.Text = "Chief";
+            this.lblHouseOwnerView.Text = "Chef";
             // 
             // panelChiefLoad
             // 
@@ -162,7 +162,7 @@
             this.Controls.Add(this.panel2);
             this.Name = "ChiefDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Chief Dashboard";
+            this.Text = "Chef Dashboard";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ChiefDashboard_FormClosing);
             this.Load += new System.EventHandler(this.ChiefDashboard_Load);
             this.panel2.ResumeLayout(false);
