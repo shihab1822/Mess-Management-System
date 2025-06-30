@@ -257,9 +257,9 @@
         private System.Windows.Forms.Button btnLoad;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker dtpAnnounce;
+        private System.Windows.Forms.Button btnSave;
     }
 }

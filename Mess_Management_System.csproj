@@ -174,8 +174,14 @@
     <EmbeddedResource Include="LoadPage.resx">
       <DependentUpon>LoadPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ManageMembers.resx">
+      <DependentUpon>ManageMembers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ManagerAnnounce.resx">
       <DependentUpon>ManagerAnnounce.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerAssignChiefs.resx">
+      <DependentUpon>ManagerAssignChiefs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManagerDashboard.resx">
       <DependentUpon>ManagerDashboard.cs</DependentUpon>
