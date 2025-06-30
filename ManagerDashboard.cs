@@ -35,20 +35,6 @@ namespace Mess_Management_System
             }
             lblWelUserName.Text = $"Welcome, {_username}";
 
-            string query = "SELECT Username FROM Users";
-            using (SqlCommand cmd = new SqlCommand(query, conn))
-            {
-                if (conn.State != ConnectionState.Open)
-                    conn.Open();
-                using (SqlDataReader reader = cmd.ExecuteReader())
-                {
-                    while (reader.Read())
-                    {
-                        cmbUsername.Items.Add(reader["Username"].ToString());
-                    }
-                }
-                conn.Close();
-            }
         }
 
         private void ManagerDashboard_FormClosing(object sender, FormClosingEventArgs e)
@@ -71,61 +57,9 @@ namespace Mess_Management_System
             this.panelManagerLoad.Controls.Add(mm);
             mm.Show();
 
-            string query = "SELECT MemberID, Name, IsManager, JoiningDate FROM Members";
-            using (SqlDataAdapter adapter = new SqlDataAdapter(query, conn))
-            {
-                DataTable dt = new DataTable();
-                adapter.Fill(dt);
-                dgvManager.DataSource = dt;
-            }
 
         }
 
-        private void btnCreate_Click(object sender, EventArgs e)
-        {
-            string name = txtMemberName.Text.Trim();
-            bool isManager = chkbIsManager.Checked;
-            DateTime joiningDate = dtpJoiningDate.Value.Date;
-            string username = cmbUsername.SelectedItem?.ToString() ?? "";
-
-            if (string.IsNullOrEmpty(name) || string.IsNullOrEmpty(username))
-            {
-                MessageBox.Show("Please fill in all fields and select a valid user.");
-                return;
-            }
-
-            int userId = GetUserIdByUsername(username);
-            if (userId <= 0)
-            {
-                MessageBox.Show("Selected user does not exist.");
-                return;
-            }
-
-            try
-            {
-                string query = "INSERT INTO Members (Name, isManager, JoiningDate, UserID) VALUES (@Name, @IsManager, @JoiningDate, @UserID)";
-                using (SqlCommand cmd = new SqlCommand(query, conn))
-                {
-                    cmd.Parameters.AddWithValue("@Name", name);
-                    cmd.Parameters.AddWithValue("@IsManager", isManager);
-                    cmd.Parameters.AddWithValue("@JoiningDate", joiningDate);
-                    cmd.Parameters.AddWithValue("@UserID", userId);
-
-                    conn.Open();
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("Member created successfully!");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message);
-            }
-            finally
-            {
-                if (conn.State == ConnectionState.Open)
-                    conn.Close();
-            }
-        }
 
         private int GetUserIdByUsername(string username)
         {
