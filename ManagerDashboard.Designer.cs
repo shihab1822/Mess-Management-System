@@ -42,28 +42,22 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtMemberID = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnSave = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnAnnouncements = new System.Windows.Forms.Button();
             this.btnBillingInformation = new System.Windows.Forms.Button();
             this.btnAssignChiefs = new System.Windows.Forms.Button();
             this.btnManageMembers = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnCreate = new System.Windows.Forms.Button();
-            this.btnUpdate = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblWelUserName = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblHouseOwnerView = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.panelHouseOwnerLoad = new System.Windows.Forms.Panel();
+            this.panelManagerLoad = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvManager)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnhome
@@ -224,18 +218,6 @@
             this.label1.TabIndex = 13;
             this.label1.Text = "Member ID:";
             // 
-            // btnSave
-            // 
-            this.btnSave.BackColor = System.Drawing.Color.Orange;
-            this.btnSave.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnSave.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(0, 0);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(277, 49);
-            this.btnSave.TabIndex = 12;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = false;
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
@@ -307,52 +289,6 @@
             this.btnManageMembers.UseVisualStyleBackColor = false;
             this.btnManageMembers.Click += new System.EventHandler(this.btnManageMembers_Click);
             // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.Transparent;
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.btnDelete);
-            this.panel5.Controls.Add(this.btnCreate);
-            this.panel5.Controls.Add(this.btnUpdate);
-            this.panel5.Location = new System.Drawing.Point(228, 685);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(857, 52);
-            this.panel5.TabIndex = 11;
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.BackColor = System.Drawing.Color.Tomato;
-            this.btnDelete.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(706, 5);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(146, 39);
-            this.btnDelete.TabIndex = 13;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = false;
-            // 
-            // btnCreate
-            // 
-            this.btnCreate.BackColor = System.Drawing.Color.LightGreen;
-            this.btnCreate.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreate.Location = new System.Drawing.Point(3, 5);
-            this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(146, 39);
-            this.btnCreate.TabIndex = 11;
-            this.btnCreate.Text = "Create";
-            this.btnCreate.UseVisualStyleBackColor = false;
-            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.BackColor = System.Drawing.Color.Yellow;
-            this.btnUpdate.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(359, 5);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(146, 39);
-            this.btnUpdate.TabIndex = 12;
-            this.btnUpdate.Text = "Update";
-            this.btnUpdate.UseVisualStyleBackColor = false;
-            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Transparent;
@@ -378,6 +314,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.panelHouseOwnerLoad);
             this.panel1.Controls.Add(this.lblHouseOwnerView);
             this.panel1.Location = new System.Drawing.Point(13, 16);
             this.panel1.Name = "panel1";
@@ -395,14 +332,21 @@
             this.lblHouseOwnerView.TabIndex = 0;
             this.lblHouseOwnerView.Text = "Manager";
             // 
-            // panel6
+            // panelHouseOwnerLoad
             // 
-            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.btnSave);
-            this.panel6.Location = new System.Drawing.Point(1091, 685);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(279, 51);
-            this.panel6.TabIndex = 21;
+            this.panelHouseOwnerLoad.BackColor = System.Drawing.Color.Transparent;
+            this.panelHouseOwnerLoad.Location = new System.Drawing.Point(213, 3);
+            this.panelHouseOwnerLoad.Name = "panelHouseOwnerLoad";
+            this.panelHouseOwnerLoad.Size = new System.Drawing.Size(1141, 645);
+            this.panelHouseOwnerLoad.TabIndex = 24;
+            // 
+            // panelManagerLoad
+            // 
+            this.panelManagerLoad.BackColor = System.Drawing.Color.Transparent;
+            this.panelManagerLoad.Location = new System.Drawing.Point(229, 123);
+            this.panelManagerLoad.Name = "panelManagerLoad";
+            this.panelManagerLoad.Size = new System.Drawing.Size(1141, 645);
+            this.panelManagerLoad.TabIndex = 24;
             // 
             // ManagerDashboard
             // 
@@ -412,10 +356,9 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1382, 753);
-            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panelManagerLoad);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel5);
             this.Controls.Add(this.dgvManager);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -428,12 +371,10 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -447,18 +388,12 @@
         private System.Windows.Forms.Button btnBillingInformation;
         private System.Windows.Forms.Button btnAssignChiefs;
         private System.Windows.Forms.Button btnManageMembers;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.Button btnCreate;
-        private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblHouseOwnerView;
         private System.Windows.Forms.Label lblWelUserName;
         private System.Windows.Forms.TextBox txtMemberID;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.TextBox txtMemberName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -467,5 +402,7 @@
         private System.Windows.Forms.CheckBox chkbIsManager;
         private System.Windows.Forms.ComboBox cmbUsername;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panelHouseOwnerLoad;
+        private System.Windows.Forms.Panel panelManagerLoad;
     }
 }

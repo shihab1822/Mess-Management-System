@@ -139,7 +139,15 @@ namespace Mess_Management_System
 
         private void btnAnnouncements_Click(object sender, EventArgs e)
         {
+            ManagerAnnounce maNA = new ManagerAnnounce();
+            maNA.TopLevel = false;
+            maNA.AutoScroll = true;
+            maNA.FormBorderStyle = FormBorderStyle.None;
+            maNA.Dock = DockStyle.Fill;
 
+            this.panelManagerLoad.Controls.Clear();
+            this.panelManagerLoad.Controls.Add(maNA);
+            maNA.Show();
         }
     }
 }

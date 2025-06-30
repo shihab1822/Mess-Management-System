@@ -1,6 +1,6 @@
 ﻿namespace Mess_Management_System
 {
-    partial class MemberAnnounce
+    partial class ManagerAnnounce
     {
         /// <summary>
         /// Required designer variable.
@@ -224,14 +224,14 @@
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // MemberAnnounce
+            // ManagerAnnounce
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1123, 540);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "MemberAnnounce";
+            this.Name = "ManagerAnnounce";
             this.Text = "HouseOwnerAnnounce";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.penalFlatsAndIncome.ResumeLayout(false);
@@ -259,6 +259,5 @@
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker dtpAnnounce;
-
     }
 }
