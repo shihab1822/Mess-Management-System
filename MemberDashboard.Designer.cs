@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MemberDashboard));
             this.btnhome = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnAnnouncements = new System.Windows.Forms.Button();
@@ -62,10 +63,10 @@
             // 
             // btnhome
             // 
-            this.btnhome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnhome.BackColor = System.Drawing.Color.BlueViolet;
             this.btnhome.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnhome.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnhome.ForeColor = System.Drawing.Color.Gray;
+            this.btnhome.ForeColor = System.Drawing.Color.White;
             this.btnhome.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnhome.Location = new System.Drawing.Point(0, 0);
             this.btnhome.Name = "btnhome";
@@ -77,7 +78,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Cornsilk;
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.btnAnnouncements);
             this.panel2.Controls.Add(this.btnBillingInformation);
@@ -90,10 +91,10 @@
             // 
             // btnAnnouncements
             // 
-            this.btnAnnouncements.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnAnnouncements.BackColor = System.Drawing.Color.BlueViolet;
             this.btnAnnouncements.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnAnnouncements.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnnouncements.ForeColor = System.Drawing.Color.Gray;
+            this.btnAnnouncements.ForeColor = System.Drawing.Color.White;
             this.btnAnnouncements.Location = new System.Drawing.Point(0, 183);
             this.btnAnnouncements.Name = "btnAnnouncements";
             this.btnAnnouncements.Size = new System.Drawing.Size(208, 61);
@@ -103,10 +104,10 @@
             // 
             // btnBillingInformation
             // 
-            this.btnBillingInformation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnBillingInformation.BackColor = System.Drawing.Color.BlueViolet;
             this.btnBillingInformation.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnBillingInformation.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBillingInformation.ForeColor = System.Drawing.Color.Gray;
+            this.btnBillingInformation.ForeColor = System.Drawing.Color.White;
             this.btnBillingInformation.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnBillingInformation.Location = new System.Drawing.Point(0, 122);
             this.btnBillingInformation.Name = "btnBillingInformation";
@@ -117,10 +118,10 @@
             // 
             // btnPayments
             // 
-            this.btnPayments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnPayments.BackColor = System.Drawing.Color.BlueViolet;
             this.btnPayments.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnPayments.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPayments.ForeColor = System.Drawing.Color.Gray;
+            this.btnPayments.ForeColor = System.Drawing.Color.White;
             this.btnPayments.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnPayments.Location = new System.Drawing.Point(0, 61);
             this.btnPayments.Name = "btnPayments";
@@ -132,6 +133,7 @@
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.dtpPayDate);
             this.panel3.Controls.Add(this.label4);
@@ -158,6 +160,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(16, 163);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(83, 20);
@@ -177,6 +180,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(16, 102);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(89, 20);
@@ -196,6 +200,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(16, 41);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 20);
@@ -214,6 +219,7 @@
             // 
             // panel4
             // 
+            this.panel4.BackColor = System.Drawing.Color.Transparent;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.button1);
             this.panel4.Controls.Add(this.button3);
@@ -258,6 +264,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.lblWelUserName);
             this.panel1.Location = new System.Drawing.Point(379, 15);
@@ -269,7 +276,7 @@
             // 
             this.lblWelUserName.AutoSize = true;
             this.lblWelUserName.Font = new System.Drawing.Font("Calibri", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWelUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.lblWelUserName.ForeColor = System.Drawing.Color.BlueViolet;
             this.lblWelUserName.Location = new System.Drawing.Point(294, 2);
             this.lblWelUserName.Name = "lblWelUserName";
             this.lblWelUserName.Size = new System.Drawing.Size(400, 53);
@@ -278,7 +285,7 @@
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel5.BackColor = System.Drawing.Color.Transparent;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.lblHouseOwnerView);
             this.panel5.Location = new System.Drawing.Point(13, 15);
@@ -290,7 +297,7 @@
             // 
             this.lblHouseOwnerView.AutoSize = true;
             this.lblHouseOwnerView.Font = new System.Drawing.Font("Calibri", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHouseOwnerView.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.lblHouseOwnerView.ForeColor = System.Drawing.Color.White;
             this.lblHouseOwnerView.Location = new System.Drawing.Point(86, 3);
             this.lblHouseOwnerView.Name = "lblHouseOwnerView";
             this.lblHouseOwnerView.Size = new System.Drawing.Size(178, 53);
@@ -322,6 +329,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1382, 753);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel1);

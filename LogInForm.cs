@@ -85,5 +85,10 @@ namespace Mess_Management_System
             sp.Show(this);
 
         }
+
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

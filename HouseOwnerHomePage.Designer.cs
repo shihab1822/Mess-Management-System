@@ -28,17 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HouseOwnerHomePage));
             this.tLpHouseOwner = new System.Windows.Forms.TableLayoutPanel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.txtAnnounce = new System.Windows.Forms.RichTextBox();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.rtxtIncomeSummary = new System.Windows.Forms.RichTextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.rtxtIncomeSummary = new System.Windows.Forms.RichTextBox();
-            this.txtAnnounce = new System.Windows.Forms.RichTextBox();
             this.tLpHouseOwner.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -75,6 +76,18 @@
             this.panel7.Size = new System.Drawing.Size(1117, 204);
             this.panel7.TabIndex = 3;
             // 
+            // txtAnnounce
+            // 
+            this.txtAnnounce.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtAnnounce.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtAnnounce.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAnnounce.Location = new System.Drawing.Point(0, 0);
+            this.txtAnnounce.Name = "txtAnnounce";
+            this.txtAnnounce.ReadOnly = true;
+            this.txtAnnounce.Size = new System.Drawing.Size(1117, 204);
+            this.txtAnnounce.TabIndex = 1;
+            this.txtAnnounce.Text = "";
+            // 
             // panel6
             // 
             this.panel6.Controls.Add(this.rtxtIncomeSummary);
@@ -83,6 +96,18 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1117, 204);
             this.panel6.TabIndex = 2;
+            // 
+            // rtxtIncomeSummary
+            // 
+            this.rtxtIncomeSummary.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.rtxtIncomeSummary.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtxtIncomeSummary.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtxtIncomeSummary.Location = new System.Drawing.Point(0, 0);
+            this.rtxtIncomeSummary.Name = "rtxtIncomeSummary";
+            this.rtxtIncomeSummary.ReadOnly = true;
+            this.rtxtIncomeSummary.Size = new System.Drawing.Size(1117, 204);
+            this.rtxtIncomeSummary.TabIndex = 0;
+            this.rtxtIncomeSummary.Text = "";
             // 
             // panel3
             // 
@@ -108,6 +133,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.BlueViolet;
             this.label3.Location = new System.Drawing.Point(336, 11);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(418, 29);
@@ -126,6 +152,7 @@
             // 
             // panel5
             // 
+            this.panel5.BackColor = System.Drawing.Color.Transparent;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.label1);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -137,42 +164,21 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.BlueViolet;
             this.label1.Location = new System.Drawing.Point(376, 11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(313, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Announcements Summary";
             // 
-            // rtxtIncomeSummary
-            // 
-            this.rtxtIncomeSummary.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.rtxtIncomeSummary.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rtxtIncomeSummary.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtxtIncomeSummary.Location = new System.Drawing.Point(0, 0);
-            this.rtxtIncomeSummary.Name = "rtxtIncomeSummary";
-            this.rtxtIncomeSummary.ReadOnly = true;
-            this.rtxtIncomeSummary.Size = new System.Drawing.Size(1117, 204);
-            this.rtxtIncomeSummary.TabIndex = 0;
-            this.rtxtIncomeSummary.Text = "";
-            // 
-            // txtAnnounce
-            // 
-            this.txtAnnounce.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtAnnounce.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtAnnounce.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAnnounce.Location = new System.Drawing.Point(0, 0);
-            this.txtAnnounce.Name = "txtAnnounce";
-            this.txtAnnounce.ReadOnly = true;
-            this.txtAnnounce.Size = new System.Drawing.Size(1117, 204);
-            this.txtAnnounce.TabIndex = 1;
-            this.txtAnnounce.Text = "";
-            // 
             // HouseOwnerHomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1123, 540);
             this.Controls.Add(this.tLpHouseOwner);
             this.Name = "HouseOwnerHomePage";

@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HouseOwnerFlatsIncome));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.dgvHouseOwner = new System.Windows.Forms.DataGridView();
             this.panelAnnouncements = new System.Windows.Forms.Panel();
+            this.btnClear = new System.Windows.Forms.Button();
             this.txtFlatAddress = new System.Windows.Forms.RichTextBox();
             this.rtxtDescription = new System.Windows.Forms.RichTextBox();
             this.lblnote = new System.Windows.Forms.Label();
@@ -43,7 +45,6 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnSave = new System.Windows.Forms.Button();
-            this.btnClear = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHouseOwner)).BeginInit();
             this.panelAnnouncements.SuspendLayout();
@@ -87,6 +88,7 @@
             // 
             // panelAnnouncements
             // 
+            this.panelAnnouncements.BackColor = System.Drawing.Color.Transparent;
             this.panelAnnouncements.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelAnnouncements.Controls.Add(this.btnClear);
             this.panelAnnouncements.Controls.Add(this.txtFlatAddress);
@@ -100,6 +102,19 @@
             this.panelAnnouncements.Name = "panelAnnouncements";
             this.panelAnnouncements.Size = new System.Drawing.Size(338, 487);
             this.panelAnnouncements.TabIndex = 40;
+            // 
+            // btnClear
+            // 
+            this.btnClear.BackColor = System.Drawing.Color.Gold;
+            this.btnClear.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnClear.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.Location = new System.Drawing.Point(0, 444);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(336, 41);
+            this.btnClear.TabIndex = 47;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // txtFlatAddress
             // 
@@ -160,6 +175,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.btnLoad);
             this.panel1.Controls.Add(this.btnUpdate);
@@ -231,23 +247,12 @@
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // btnClear
-            // 
-            this.btnClear.BackColor = System.Drawing.Color.Gold;
-            this.btnClear.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnClear.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(0, 444);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(336, 41);
-            this.btnClear.TabIndex = 47;
-            this.btnClear.Text = "Clear";
-            this.btnClear.UseVisualStyleBackColor = false;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
-            // 
             // HouseOwnerFlatsIncome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1123, 540);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "HouseOwnerFlatsIncome";
