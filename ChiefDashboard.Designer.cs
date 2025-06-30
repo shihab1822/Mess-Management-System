@@ -33,22 +33,14 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnAnnouncements = new System.Windows.Forms.Button();
             this.btnMealData = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblWelUserName = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblHouseOwnerView = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.btnSave = new System.Windows.Forms.Button();
             this.panelChiefLoad = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnhome
@@ -106,51 +98,6 @@
             this.btnMealData.UseVisualStyleBackColor = false;
             this.btnMealData.Click += new System.EventHandler(this.btnMealData_Click);
             // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.Transparent;
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.button1);
-            this.panel5.Controls.Add(this.button3);
-            this.panel5.Controls.Add(this.button2);
-            this.panel5.Location = new System.Drawing.Point(228, 685);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(857, 52);
-            this.panel5.TabIndex = 11;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Tomato;
-            this.button1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(706, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(146, 39);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Delete";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.LightGreen;
-            this.button3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(3, 5);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(146, 39);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "Create";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Yellow;
-            this.button2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(359, 5);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(146, 39);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Update";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Transparent;
@@ -194,32 +141,12 @@
             this.lblHouseOwnerView.TabIndex = 0;
             this.lblHouseOwnerView.Text = "Chief";
             // 
-            // panel6
-            // 
-            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.btnSave);
-            this.panel6.Location = new System.Drawing.Point(1091, 686);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(279, 51);
-            this.panel6.TabIndex = 22;
-            // 
-            // btnSave
-            // 
-            this.btnSave.BackColor = System.Drawing.Color.Orange;
-            this.btnSave.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnSave.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(0, 0);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(277, 49);
-            this.btnSave.TabIndex = 12;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = false;
-            // 
             // panelChiefLoad
             // 
+            this.panelChiefLoad.BackColor = System.Drawing.Color.Transparent;
             this.panelChiefLoad.Location = new System.Drawing.Point(228, 92);
             this.panelChiefLoad.Name = "panelChiefLoad";
-            this.panelChiefLoad.Size = new System.Drawing.Size(1141, 587);
+            this.panelChiefLoad.Size = new System.Drawing.Size(1141, 645);
             this.panelChiefLoad.TabIndex = 23;
             // 
             // ChiefDashboard
@@ -230,10 +157,8 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1382, 753);
             this.Controls.Add(this.panelChiefLoad);
-            this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel2);
             this.Name = "ChiefDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -241,12 +166,10 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ChiefDashboard_FormClosing);
             this.Load += new System.EventHandler(this.ChiefDashboard_Load);
             this.panel2.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -256,16 +179,10 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnAnnouncements;
         private System.Windows.Forms.Button btnMealData;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblHouseOwnerView;
         private System.Windows.Forms.Label lblWelUserName;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Panel panelChiefLoad;
     }
 }
