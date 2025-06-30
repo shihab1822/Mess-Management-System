@@ -50,6 +50,7 @@
             // 
             // tLpHouseOwner
             // 
+            this.tLpHouseOwner.BackColor = System.Drawing.Color.Transparent;
             this.tLpHouseOwner.ColumnCount = 1;
             this.tLpHouseOwner.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tLpHouseOwner.Controls.Add(this.panel7, 0, 3);
@@ -121,6 +122,7 @@
             // 
             // panel8
             // 
+            this.panel8.BackColor = System.Drawing.Color.Transparent;
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel8.Controls.Add(this.label3);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -133,7 +135,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.BlueViolet;
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(336, 11);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(418, 29);
@@ -166,7 +168,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.BlueViolet;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(376, 11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(313, 29);

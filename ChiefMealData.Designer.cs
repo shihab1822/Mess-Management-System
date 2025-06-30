@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChiefMealData));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dtpJoiningDate = new System.Windows.Forms.DateTimePicker();
@@ -42,6 +43,7 @@
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
@@ -57,6 +59,7 @@
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.dtpJoiningDate);
             this.panel3.Controls.Add(this.lblMealDate);
@@ -81,6 +84,7 @@
             // 
             this.lblMealDate.AutoSize = true;
             this.lblMealDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMealDate.ForeColor = System.Drawing.Color.White;
             this.lblMealDate.Location = new System.Drawing.Point(25, 33);
             this.lblMealDate.Name = "lblMealDate";
             this.lblMealDate.Size = new System.Drawing.Size(91, 20);
@@ -99,6 +103,7 @@
             // 
             this.lblFoodDescription.AutoSize = true;
             this.lblFoodDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFoodDescription.ForeColor = System.Drawing.Color.White;
             this.lblFoodDescription.Location = new System.Drawing.Point(25, 108);
             this.lblFoodDescription.Name = "lblFoodDescription";
             this.lblFoodDescription.Size = new System.Drawing.Size(142, 20);
@@ -123,6 +128,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1123, 540);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "ChiefMealData";
