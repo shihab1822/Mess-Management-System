@@ -202,5 +202,11 @@ namespace Mess_Management_System
             dtpAnnounce.Value = DateTime.Now;
             selectedAnnounceId = -1;
         }
+
+        private void btnEnter_Click(object sender, EventArgs e)
+        {
+            string name = "Shahriyar";
+            txtname.Text = name.ToString();
+        }
     }
 }

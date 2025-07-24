@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChiefAnnounce));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.penalFlatsAndIncome = new System.Windows.Forms.Panel();
+            this.btnEnter = new System.Windows.Forms.Button();
+            this.txtname = new System.Windows.Forms.TextBox();
             this.dtpAnnounce = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.btnClear = new System.Windows.Forms.Button();
@@ -73,6 +75,8 @@
             // 
             this.penalFlatsAndIncome.BackColor = System.Drawing.Color.Transparent;
             this.penalFlatsAndIncome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.penalFlatsAndIncome.Controls.Add(this.btnEnter);
+            this.penalFlatsAndIncome.Controls.Add(this.txtname);
             this.penalFlatsAndIncome.Controls.Add(this.dtpAnnounce);
             this.penalFlatsAndIncome.Controls.Add(this.label2);
             this.penalFlatsAndIncome.Controls.Add(this.btnClear);
@@ -83,6 +87,24 @@
             this.penalFlatsAndIncome.Name = "penalFlatsAndIncome";
             this.penalFlatsAndIncome.Size = new System.Drawing.Size(337, 487);
             this.penalFlatsAndIncome.TabIndex = 40;
+            // 
+            // btnEnter
+            // 
+            this.btnEnter.Location = new System.Drawing.Point(109, 346);
+            this.btnEnter.Name = "btnEnter";
+            this.btnEnter.Size = new System.Drawing.Size(75, 23);
+            this.btnEnter.TabIndex = 44;
+            this.btnEnter.Text = "enter";
+            this.btnEnter.UseVisualStyleBackColor = true;
+            this.btnEnter.Click += new System.EventHandler(this.btnEnter_Click);
+            // 
+            // txtname
+            // 
+            this.txtname.Location = new System.Drawing.Point(100, 383);
+            this.txtname.Name = "txtname";
+            this.txtname.Size = new System.Drawing.Size(100, 22);
+            this.txtname.TabIndex = 43;
+            this.txtname.Visible = false;
             // 
             // dtpAnnounce
             // 
@@ -262,5 +284,7 @@
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker dtpAnnounce;
+        private System.Windows.Forms.TextBox txtname;
+        private System.Windows.Forms.Button btnEnter;
     }
 }
